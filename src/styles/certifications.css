@@ -1,0 +1,71 @@
+.certifications-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.certifications-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.certifications-list {
+    list-style: none;
+    padding: 0;
+}
+
+.certification-card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.certification-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.certification-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.certification-issuer {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 5px;
+}
+
+.certification-date {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 5px;
+}
+
+.credential-id {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+}
+
+.certification-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.certification-link:hover {
+    color: #2563eb;
+}
