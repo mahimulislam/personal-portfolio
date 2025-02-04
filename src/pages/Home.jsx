@@ -4,7 +4,7 @@ const Home = () => (
   <section className="profile-container">
     <div className="profile-card">
       <img 
-        src="/images/mahimul.jpg" 
+        src="/images/mahimul.webp" 
         alt="Mahimul Islam" 
         className="profile-image"
       />
