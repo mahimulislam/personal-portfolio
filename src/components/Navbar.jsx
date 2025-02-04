@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
 
         <a
-          href="/resume/Mahimul_Islam_Resume_Jan_28.pdf"
+          href="/resume/Mahimul_Islam_Resume_Feb_04.pdf"
           download="Mahimul_Islam_Resume.pdf"
           className="resume-button"
         >
@@ -65,7 +65,7 @@ const Navbar = () => {
           ))}
 
           <a
-            href="/resume/Mahimul_Islam_Resume_Jan_28.pdf"
+            href="/resume/Mahimul_Islam_Resume_Feb_04.pdf"
             download="Mahimul_Islam_Resume.pdf"
             className="mobile-resume-button"
             onClick={() => setIsOpen(false)}
