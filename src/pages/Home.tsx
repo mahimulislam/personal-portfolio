@@ -129,7 +129,7 @@ const Home = () => {
                 <div className="relative">
                   <div className="w-48 h-48 mx-auto rounded-full overflow-hidden ring-4 ring-primary/20 shadow-lg">
                     <img
-                      src="/images/mahimul.webp"
+                      src="/images/mahimul.jpg"
                       alt="Mahimul Islam - Full Stack Engineer"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
