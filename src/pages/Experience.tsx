@@ -147,12 +147,6 @@ const Experience = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-2 text-muted-foreground">
-            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-            <span className="font-medium">Available for new opportunities</span>
-          </div>
-        </div>
       </div>
     </section>
   );
