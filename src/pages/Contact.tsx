@@ -134,21 +134,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-elegant gradient-primary text-primary-foreground">
-              <CardContent className="p-6">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-bold">Available for Opportunities</h3>
-                  <p className="text-primary-foreground/90">
-                    I'm currently open to full-time positions, consulting opportunities, 
-                    and interesting project collaborations. Let's build something amazing together!
-                  </p>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" />
-                    <span className="font-medium">Available for hire</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Contact Form */}
