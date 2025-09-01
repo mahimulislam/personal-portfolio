@@ -142,15 +142,13 @@ const Home = () => {
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Mahimul Islam</h3>
                   <p className="text-muted-foreground">Full Stack Engineer</p>
-                  <div className="flex justify-center">
-                    <Badge className="gradient-primary">Available for opportunities</Badge>
-                  </div>
+                  
                 </div>
 
                 <div className="pt-4 text-left space-y-3">
                   <div className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse" />
-                    <span>Currently Full Stack Engineer at Maeknit Inc</span>
+                    <span>Currently Full Stack Engineer at MAEKNIT Inc</span>
                   </div>
                   <div className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
