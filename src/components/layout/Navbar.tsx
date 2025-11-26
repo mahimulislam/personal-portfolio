@@ -1,49 +1,50 @@
-import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { Menu, X, Download, Moon, Sun } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useTheme } from "next-themes";
+"use client"
+
+import { Link, useLocation } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { Menu, X, Download, Moon, Sun } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { useTheme } from "next-themes"
 
 const Navbar = () => {
-  const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const location = useLocation()
+  const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   const links = [
     { name: "Home", path: "/" },
     { name: "Experience", path: "/experience" },
     { name: "Projects", path: "/projects" },
     { name: "Education", path: "/education" },
+    { name: "Publications", path: "/publications" },
     { name: "Certifications", path: "/certifications" },
     { name: "Contact", path: "/contact" },
-  ];
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+      setIsScrolled(window.scrollY > 20)
+    }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const handleResumeDownload = () => {
     // Create a download link for the resume
-    const link = document.createElement('a');
-    link.href = '/resume/Mahimul_Islam_Resume.pdf';
-    link.download = 'Mahimul_Islam_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    const link = document.createElement("a")
+    link.href = "/resume/Mahimul_Islam_Resume.pdf"
+    link.download = "Mahimul_Islam_Resume.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "nav-blur shadow-elegant border-b border-border/50"
-          : "bg-transparent"
+        isScrolled ? "nav-blur shadow-elegant border-b border-border/50" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,9 +64,7 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === link.path
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
+                  location.pathname === link.path ? "text-primary" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {link.name}
@@ -88,7 +87,7 @@ const Navbar = () => {
               <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
             </Button>
-            
+
             <Button
               onClick={handleResumeDownload}
               className="gradient-primary shadow-elegant hover:shadow-lg transition-all duration-200 group"
@@ -99,12 +98,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
@@ -128,25 +122,25 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            
+
             <div className="flex items-center justify-between pt-4 border-t border-border/20">
               <Button
                 variant="ghost"
                 size="icon"
                 onClick={() => {
-                  setTheme(theme === "dark" ? "light" : "dark");
-                  setIsOpen(false);
+                  setTheme(theme === "dark" ? "light" : "dark")
+                  setIsOpen(false)
                 }}
                 className="h-9 w-9"
               >
                 <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                 <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               </Button>
-              
+
               <Button
                 onClick={() => {
-                  handleResumeDownload();
-                  setIsOpen(false);
+                  handleResumeDownload()
+                  setIsOpen(false)
                 }}
                 className="gradient-primary shadow-elegant flex-1 ml-4"
               >
@@ -158,7 +152,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
