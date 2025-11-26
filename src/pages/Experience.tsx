@@ -1,73 +1,123 @@
-import { Calendar, MapPin, ExternalLink } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Calendar, MapPin, ExternalLink } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 
 const Experience = () => {
   const jobs = [
     {
       title: "Full Stack Software Engineer",
       company: "Maeknit, Inc.",
-      location: "Jamaica, NY (Remote)",
+      location: "Jamaica, NY",
       duration: "Mar 2025 – Present",
       type: "Full-time",
       website: "https://maeknit.com",
       achievements: [
-        "Sole software engineer responsible for the full lifecycle of software development, working in two-week Agile sprints using Jira and Slack to collaborate directly with the CTO and CEO",
-        "Designed and developed 5+ custom Odoo ERP modules across CRM, Inventory, Sales, Project, Contacts, and Email to automate internal operations and align with garment industry needs",
-        "Built and launched the company's public-facing website using React.js, Next.js, HTML, CSS, delivering a fully responsive, branded digital experience",
-        "Architected and implemented a dynamic financial modeling dashboard tailored to fashion manufacturing workflows, integrating margin planning, machine capacity, and sensitivity analysis",
-        "Contributed to long-term infrastructure planning, including preparations for migration from Odoo.sh to AWS (EC2, RDS) to improve scalability and system responsiveness",
-        "Developing an AI-powered chatbot using Python and NLP models to support internal quoting, onboarding, and knowledgebase access",
-        "Daily responsibilities include 80% hands-on coding and 20% planning/testing across backend and frontend systems"
+        "Sole software engineer leading full-cycle development in two-week Agile sprints, collaborating directly with the CTO and CEO via Jira and Slack",
+        "Built the company's end-to-end business workflow in Odoo, enabling a seamless progression from Website Lead Generation through CRM Pipeline, Sales Orders, R&D, Manufacturing Shopfloor, and Delivery",
+        "Designed custom stages, views, and automation rules across CRM, Sales, Inventory, Project, and MRP to eliminate manual handoffs and standardize garment production processes using Python, OWL, JavaScript, XML",
+        "Developed a full MFG shopfloor interface using OWL with integrated instructions, CADs, attachments, progress tracking, and operation-specific logic",
+        "Created and maintained 7+ custom Odoo modules tailored to fashion manufacturing, including BOM management, yarn orchestration, variant handling, machine settings, and technical documentation",
+        "Integrated Excalidraw into Odoo's R&D pipeline, enabling sketching, CAD data storage, and technical documentation directly in BOM Requests and Work Orders",
+        "Built and launched the public-facing website using React.js, Next.js, HTML, CSS, delivering a fully responsive branded experience",
+        "Architected and built a financial modeling dashboard for margin planning, capacity simulation, and sensitivity analysis using React.js, Next.js, HTML, CSS",
+        "Developing an internal AI chatbot using Python and NLP models for quoting, onboarding, and knowledgebase access",
+        "Building a factory marketplace platform with a React.js frontend and Python backend integrated with Odoo modules to enable rapid quoting system",
+        "Daily responsibilities: 80% hands-on coding and 20% planning/testing using Python, OWL, JavaScript, React.js, XML, PostgreSQL",
       ],
-      technologies: ["Python", "OWL", "JavaScript", "XML", "React.js", "Next.js", "HTML", "CSS", "PostgreSQL", "Odoo.sh", "AWS", "Jira", "Slack"],
+      technologies: [
+        "Python",
+        "OWL",
+        "JavaScript",
+        "XML",
+        "React.js",
+        "Next.js",
+        "HTML",
+        "CSS",
+        "PostgreSQL",
+        "Odoo.sh",
+        "AWS",
+        "Jira",
+        "Slack",
+      ],
     },
     {
       title: "Full Stack Engineer",
       company: "Genome Medical Inc.",
-      location: "South San Francisco, CA (Remote)",
+      location: "South San Francisco, CA",
       duration: "Aug 2022 – Jan 2025",
       type: "Full-time",
       website: "https://genomemedical.com",
       achievements: [
-        "Architected and deployed scalable cloud-based web and backend systems using AWS (EC2, S3, RDS) and Docker, ensuring 100% on-time delivery of key product releases",
-        "Led the design and implementation of a seamless patient migration solution between Genome Medical and GeneMatters, integrating secure API development with a React.js + Redux-powered one-click UI",
-        "Collaborated on enhancing and maintaining a Vue.js-based Admin Portal, troubleshooting issues, resolving tickets, and optimizing workflows to help administrators efficiently manage partner and provider information",
-        "Strengthened platform security by proactively identifying and resolving over 50 critical vulnerabilities using tools like Aikido & Sentry, achieving a 30% improvement in system resilience",
-        "Designed, implemented, and maintained CI/CD pipelines using GitLab CI/CD and Bitbucket pipelines, resulting in a 20% acceleration in release cycles",
-        "Built and executed automated testing frameworks (unit, integration, and system testing) with Mocha, Jest, Selenium, and Cypress, resulting in a 40% reduction in production bugs",
-        "Provided timely production support, resolving over 150 support tickets within 6 months, ensuring continuous operational reliability"
+        "Architected and deployed scalable cloud-based web and backend systems using AWS (EC2, S3, RDS) and Docker, using open-source technologies like Flask, Node.js, and PostgreSQL",
+        "Ensured 100% on-time delivery of key product releases while maintaining high availability and operational support for mission-critical healthcare applications",
+        "Led the design and implementation of a seamless patient migration solution between Genome Medical and GeneMatters, integrating secure API development (Node.js, Python) with a React.js + Redux-powered one-click UI. This solution automated large-scale data transfers, eliminating manual intervention and ensuring 100% secure migration of critical patient records",
+        "Collaborated on enhancing and maintaining a Vue.js-based Admin Portal, troubleshooting issues, resolving tickets, and optimizing workflows to help administrators efficiently manage partner and provider information, streamline onboarding, and improve operational efficiency",
+        "Strengthened platform security by proactively identifying and resolving over 50 critical vulnerabilities using tools like Aikido & Sentry, a 30% improvement in system resilience and a reduction in reported security incidents",
+        "Designed, implemented, and maintained CI/CD pipelines using tools such as GitLab CI/CD and Bitbucket pipelines, automating the build, test, and deployment processes, resulting in a 20% acceleration in release cycles and ensuring consistent delivery of high-quality software",
+        "Collaborated cross-functionally with senior engineers, product managers, and designers to develop user-centric React.js and Vue.js features, contributing to the successful launch of initiatives that streamlined clinical workflows and improved operational efficiency",
+        "Built and executed automated testing frameworks (unit, integration, and system testing) with Mocha, Jest, Selenium, and Cypress. This initiative resulted in a 40% reduction in production bugs, 15% acceleration in release cycles, and significantly reduced the need for hotfixes, enhancing overall system stability",
+        "Played a key role in agile sprints, contributing to planning, refinement, and retrospectives to enhance team productivity, utilizing Jira for sprint management and Confluence for documentation",
+        "Provided timely production support, resolving over 150 support tickets within 6 months, ensuring continuous operational reliability and minimizing system downtime",
       ],
-      technologies: ["React.js", "Vue.js", "TypeScript", "JavaScript", "Python", "Flask", "Node.js", "Mocha", "Jest", "Selenium", "Cypress", "AWS", "Docker", "PostgreSQL", "Redux"],
+      technologies: [
+        "React.js",
+        "Vue.js",
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "Flask",
+        "Node.js",
+        "Mocha",
+        "Jest",
+        "Selenium",
+        "Cypress",
+        "AWS",
+        "Docker",
+        "PostgreSQL",
+        "Redux",
+      ],
     },
     {
       title: "Software Developer",
-      company: "Cardinal Selling Services, LLC",
+      company: "Cardinal Selling Services",
       location: "Huntingburg, IN",
-      duration: "Jul 2014 - Jan 2021",
-      type: "Full-time",
+      duration: "Jul 2014 – Jan 2021, Feb 2022 – Aug 2022",
+      type: "Part-time",
       website: "https://shopcardinal.com",
       achievements: [
         "Developed websites and web services using REST-based web services and tools including HTML, CSS, Bootstrap, JavaScript, and Django",
         "Conducted user requirement analysis and designed the Entity Relationship Diagram (ERD)",
         "Conducted integration and unit testing using automated testing frameworks including Mocha, Jest, Selenium, and Cypress",
-        "Improved product scraping systems using Python and its libraries, implementing automation to streamline manual processes",
-        "Provided support for email marketing initiatives and used Linux / command line and modern software development practices",
-        "Worked with relational database design, SQL, and PostgreSQL, built high-scale APIs that operate on AWS"
+        "Improved product scraping systems using Python and its libraries",
+        "Implemented automation to streamline manual processes, resulting in cost savings for the company",
+        "Provided support for email marketing initiatives",
+        "Used Linux / command line and modern software development practices (git, pull-requests, Jira) to advance software projects",
+        "Worked with relational database design, SQL, and PostgreSQL",
+        "Built high-scale APIs that operate on AWS, using tools including React.js, TypeScript, Node.js, and Docker",
       ],
-      technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "Django", "Python", "React.js", "TypeScript", "Node.js", "Docker", "PostgreSQL", "AWS"],
+      technologies: [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript",
+        "Django",
+        "Python",
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Docker",
+        "PostgreSQL",
+        "AWS",
+      ],
     },
-  ];
+  ]
 
   return (
     <section className="py-20 bg-gradient-to-br from-background to-muted/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-            Professional{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
-              Experience
-            </span>
+            Professional <span className="gradient-primary bg-clip-text text-transparent">Experience</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building scalable solutions and leading impactful projects in healthcare and e-commerce
@@ -76,8 +126,8 @@ const Experience = () => {
 
         <div className="space-y-8">
           {jobs.map((job, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="shadow-elegant hover:shadow-lg transition-all duration-300 hover:scale-[1.02] group"
             >
               <CardHeader className="space-y-4">
@@ -100,7 +150,7 @@ const Experience = () => {
                       )}
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2 lg:text-right">
                     <div className="flex items-center space-x-2 text-muted-foreground">
                       <Calendar className="h-4 w-4" />
@@ -132,9 +182,9 @@ const Experience = () => {
                   <h4 className="text-lg font-semibold mb-3 text-foreground">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
                     {job.technologies.map((tech) => (
-                      <Badge 
-                        key={tech} 
-                        variant="outline" 
+                      <Badge
+                        key={tech}
+                        variant="outline"
                         className="hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
                       >
                         {tech}
@@ -146,10 +196,9 @@ const Experience = () => {
             </Card>
           ))}
         </div>
-
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Experience

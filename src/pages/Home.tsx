@@ -1,19 +1,21 @@
-import { Github, Linkedin, Mail, MapPin, Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+"use client"
+
+import { Github, Linkedin, Mail, MapPin, Download } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 
 const Home = () => {
-  const skills = ["React.js", "Node.js", "Python", "AWS", "TypeScript", "Docker", "Odoo", "Next.js"];
-  
+  const skills = ["React.js", "Node.js", "Python", "AWS", "TypeScript", "Docker", "Odoo", "Next.js"]
+
   const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/resume/Mahimul_Islam_Resume.pdf';
-    link.download = 'Mahimul_Islam_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    const link = document.createElement("a")
+    link.href = "/resume/Mahimul_Islam_Resume.pdf"
+    link.download = "Mahimul_Islam_Resume.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
@@ -24,35 +26,32 @@ const Home = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>Southbury, CT</span>
+                <span>Jamaica, NY</span>
               </div>
-              
+
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Hi, I'm{" "}
-                <span className="gradient-primary bg-clip-text text-transparent">
-                  Mahimul Islam
-                </span>
+                Hi, I'm <span className="gradient-primary bg-clip-text text-transparent">Mahimul Islam</span>
               </h1>
-              
-              <p className="text-2xl text-muted-foreground font-medium">
-                Full Stack Engineer
-              </p>
+
+              <p className="text-2xl text-muted-foreground font-medium">Full Stack Engineer</p>
             </div>
 
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I am an experienced Full Stack Engineer with{" "}
-                <span className="text-primary font-semibold">5+ years of expertise</span> in 
-                building scalable, secure, and efficient web applications across healthcare, 
-                e-commerce, and manufacturing industries. Currently the sole software engineer 
-                at Maeknit Inc, developing custom ERP solutions and AI-powered tools.
+                <span className="text-primary font-semibold">6+ years of expertise</span> building scalable web applications, backend systems, 
+                and automated business workflows using React.js, Vue.js, TypeScript, Node.js, Python, and AWS. Previously delivered secure, 
+                HIPAA-compliant solutions in digital health, and now lead digital transformation at Maeknit by engineering end-to-end Odoo workflows, 
+                manufacturing tools, inventory systems, and financial modeling platforms. Skilled in designing user-centric, secure, 
+                and high-performance applications while improving operational efficiency through automation, testing, and process optimization.
+                Strong collaborator across cross-functional teams, leveraging agile practices, cloud infrastructure, and relational databases to deliver reliable, industry-focused solutions.
               </p>
 
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
-                  <Badge 
-                    key={skill} 
-                    variant="secondary" 
+                  <Badge
+                    key={skill}
+                    variant="secondary"
                     className="text-sm py-1 px-3 hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
                   >
                     {skill}
@@ -71,12 +70,12 @@ const Home = () => {
                 <Download className="h-5 w-5 mr-2 group-hover:animate-bounce" />
                 Download Resume
               </Button>
-              
+
               <div className="flex space-x-3">
                 <Button
                   variant="outline"
                   size="icon"
-                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200 bg-transparent"
                   asChild
                 >
                   <a
@@ -88,11 +87,11 @@ const Home = () => {
                     <Github className="h-5 w-5" />
                   </a>
                 </Button>
-                
+
                 <Button
                   variant="outline"
                   size="icon"
-                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200 bg-transparent"
                   asChild
                 >
                   <a
@@ -104,17 +103,14 @@ const Home = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </Button>
-                
+
                 <Button
                   variant="outline"
                   size="icon"
-                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
+                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200 bg-transparent"
                   asChild
                 >
-                  <a
-                    href="mailto:mahimulislam@gmail.com"
-                    aria-label="Email"
-                  >
+                  <a href="mailto:mahimulislam@gmail.com" aria-label="Email">
                     <Mail className="h-5 w-5" />
                   </a>
                 </Button>
@@ -138,11 +134,10 @@ const Home = () => {
                     <span className="text-primary-foreground font-bold text-lg">✨</span>
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Mahimul Islam</h3>
                   <p className="text-muted-foreground">Full Stack Engineer</p>
-                  
                 </div>
 
                 <div className="pt-4 text-left space-y-3">
@@ -164,25 +159,10 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Statistics Section */}
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { number: "5+", label: "Years Experience" },
-            { number: "50+", label: "Projects Completed" },
-            { number: "20+", label: "Certifications" },
-            { number: "100%", label: "Client Satisfaction" },
-          ].map((stat, index) => (
-            <div key={index} className="text-center group">
-              <div className="text-3xl lg:text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-200">
-                {stat.number}
-              </div>
-              <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-            </div>
-          ))}
-        </div>
+
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
