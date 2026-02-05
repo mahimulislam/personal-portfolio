@@ -34,8 +34,8 @@ const Navbar = () => {
   const handleResumeDownload = () => {
     // Create a download link for the resume
     const link = document.createElement("a")
-    link.href = "/resume/Mahimul_Islam_Resume.pdf"
-    link.download = "Mahimul_Islam_Resume.pdf"
+    link.href = "/resume/Mahimul_Islam_Resume_Feb4_2026.pdf"
+    link.download = "Mahimul_Islam_Resume_Feb4_2026.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
