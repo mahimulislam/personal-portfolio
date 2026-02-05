@@ -12,31 +12,16 @@ const Experience = () => {
       type: "Full-time",
       website: "https://maeknit.com",
       achievements: [
-        "Led the technical evolution of the Digital Factory Marketplace, architecting a high-performance Next.js frontend deployed on AWS ECS/Fargate and ensuring high availability in a multi-tenant manufacturing ecosystem",
-        "Built the connective tissue between the marketplace and a robust Odoo ERP backend with Python and OWL, automating the manufacturing lifecycle from AI-driven client onboarding and factory bidding to shop-floor R&D and delivery",
-        "Designed and maintained 7+ custom Odoo modules spanning CRM, Sales, Inventory, Project, MRP, and Manufacturing to eliminate manual handoffs and standardize global garment production",
-        "Developed a full manufacturing shop-floor interface that embeds CAD/Excalidraw assets, instructions, attachments, and operation-specific logic to deliver predictable execution and data capture",
-        "Instrumented an AI-powered quoting, onboarding, and knowledge chatbot using NLP models to surface ERP data, accelerate decisions, and augment support for operations teams",
-        "Deployed an internal financial modeling dashboard for margin planning, capacity simulation, and sensitivity analysis to inform strategic bidding and funding conversations",
-        "Integrated factory bidding workflows, CAD storage, and quality checkpoints so vendors across the platform can collaborate on R&D requests, prototyping, and delivery tracking",
-        "Maintained CI/CD pipelines, observability, and monitoring so the platform meets SLAs, supports global operations, and stays ready for scaling",
-        "Instrumental in securing a $3M venture investment and positioning Maeknit for global operational scale through automation and resilient infrastructure",
-        "Daily focus: 80% hands-on feature development, 20% planning/testing, pairing closely with leadership on product direction and compliance",
+        "Architected a B2B Manufacturing Marketplace using Next.js and PostgreSQL (Amazon RDS), deployed on AWS ECS with Fargate for serverless container orchestration.",
+        "Engineered an AI-driven Onboarding Suite that summarizes client meetings and generates automated project proposals, streamlining communication via SendGrid and an AI-powered “project chatter.”",
+        "Developed a Factory Quotation System allowing admins to broadcast requirements to vendors and receive live, competitive quotes based on baseline manufacturing standards.",
+        "Designed a Seamless Odoo-to-Portal Bridge, routing marketplace orders into an ERP pipeline covering CRM, Sales, R&D, and Manufacturing (MRP) for end-to-end traceability.",
+        "Sole Software Engineer owning end-to-end execution, scaling the platform to secure a $3M venture investment while managing two-week Agile sprints with the CTO and CEO.",
+        "Built 7+ Custom Odoo Modules using Python, OWL, and JavaScript to automate fashion-specific logic, including yarn orchestration and BOM management.",
+        "Architected a Financial Modeling Dashboard for margin planning and capacity simulation, improving executive decision-making speed.",
       ],
-      technologies: [
-        "Next.js",
-        "React.js",
-        "Python",
-        "OWL",
-        "JavaScript",
-        "TypeScript",
-        "AWS ECS/Fargate",
-        "Docker",
-        "Odoo",
-        "PostgreSQL",
-        "Redis",
-        "GitLab CI/CD",
-      ],
+      technologies:
+        "Python, OWL, JavaScript/TypeScript, Next.js, React.js, AWS (ECS, Fargate, RDS), PostgreSQL, Docker, SendGrid API, Excalidraw, AI Agents.",
     },
     {
       title: "Full Stack Engineer",
@@ -46,68 +31,31 @@ const Experience = () => {
       type: "Full-time",
       website: "https://genomemedical.com",
       achievements: [
-        "Architected a large-scale patient data migration portal that enabled Genome Medical to securely transfer clinical records with zero data loss and 100% HIPAA compliance",
-        "Automated high-volume clinical transfers between Genome Medical and GeneMatters using secure Node.js and Python APIs, eliminating manual intervention in sensitive workflows",
-        "Delivered a React.js + Redux-powered one-click migration UI that simplified operator tasks while preserving audit trails and encryption requirements",
-        "Built scalable cloud infrastructure (AWS EC2/S3/RDS) and Docker deployments to keep mission-critical applications highly available for providers and clinicians",
-        "Maintained 24/7 operational readiness by resolving production incidents, providing timely support, and keeping SLAs intact for healthcare customers",
-        "Strengthened platform resilience by contributing to vulnerability management, incident analysis, and remediation coordination with the security team",
-        "Collaborated across product, design, and engineering to enhance a Vue.js admin portal that streamlined partner onboarding, provider credentialing, and data operations",
-        "Implemented CI/CD pipelines via GitLab and Bitbucket to automate testing and deployments, accelerating releases while keeping compliance controls intact",
-        "Authored automated test suites (Mocha, Jest, Selenium, Cypress) to guard against regression bugs and to enable smoother deployments for clinical products",
-        "Drove agile rituals (planning, refinement, retrospectives) and maintained documentation to keep the team aligned on delivery of high-impact features",
+        "Delivered mission-critical healthcare systems with 100% on-time releases, maintaining high availability for regulated clinical platforms.",
+        "Enabled secure patient data migration between Genome Medical and GeneMatters, ensuring HIPAA compliance and zero data loss.",
+        "Improved platform security by resolving 50+ critical vulnerabilities, resulting in a 30% increase in system robustness.",
+        "Accelerated product delivery velocity through CI/CD automation, reducing release cycles by 20%.",
+        "Architected cloud-based backend systems using AWS (EC2, S3, RDS) and Docker, leveraging Flask, Node.js, and PostgreSQL.",
+        "Designed a patient migration platform using secure APIs and a React.js + Redux one-click UI to automate data transfers.",
+        "Built automated testing frameworks using Mocha, Jest, Selenium, and Cypress, reducing production bugs by 40%.",
+        "Provided production support at scale, resolving 150+ support tickets within six months while maintaining system stability.",
       ],
-      technologies: [
-        "React.js",
-        "Vue.js",
-        "TypeScript",
-        "JavaScript",
-        "Python",
-        "Flask",
-        "Node.js",
-        "AWS",
-        "Docker",
-        "PostgreSQL",
-        "GitLab CI/CD",
-        "Bitbucket Pipelines",
-        "Redux",
-        "Mocha",
-        "Jest",
-        "Selenium",
-        "Cypress",
-      ],
+      technologies: "React.js, Vue.js, TypeScript, Python (Flask), Node.js, GitLab CI/CD, Bitbucket Pipelines, AWS, Docker, PostgreSQL.",
     },
     {
-      title: "Software Developer",
+      title: "Software Developer (Part-time)",
       company: "Cardinal Selling Services",
       location: "Huntingburg, IN",
       duration: "Jul 2014 – Jan 2021, Feb 2022 – Aug 2022",
       type: "Part-time",
       website: "https://shopcardinal.com",
       achievements: [
-        "Developed websites and web services using REST-based web services and tools including HTML, CSS, Bootstrap, JavaScript, and Django",
-        "Conducted user requirement analysis and designed the Entity Relationship Diagram (ERD)",
-        "Conducted integration and unit testing using automated testing frameworks including Mocha, Jest, Selenium, and Cypress",
-        "Improved product scraping systems using Python and its libraries",
-        "Implemented automation to streamline manual processes, resulting in cost savings for the company",
-        "Provided support for email marketing initiatives",
-        "Used Linux / command line and modern software development practices (git, pull-requests, Jira) to advance software projects",
-        "Worked with relational database design, SQL, and PostgreSQL",
-        "Built high-scale APIs that operate on AWS, using tools including React.js, TypeScript, Node.js, and Docker",
-      ],
-      technologies: [
-        "HTML",
-        "CSS",
-        "Bootstrap",
-        "JavaScript",
-        "Django",
-        "Python",
-        "React.js",
-        "TypeScript",
-        "Node.js",
-        "Docker",
-        "PostgreSQL",
-        "AWS",
+        "Developed web services using REST APIs, HTML, CSS, Bootstrap, and Django.",
+        "Architected high-scale APIs deployed on AWS, leveraging Node.js, TypeScript, and Docker for high-concurrency traffic.",
+        "Optimized product scraping engines using Python, significantly increasing data ingestion rates and accuracy.",
+        "Engineered automated test suites using Jest and Selenium, reducing regression bugs and increasing deployment velocity.",
+        "Led ERD design and schema optimization for PostgreSQL databases, ensuring query performance for complex datasets.",
+        "Automated manual processes, reducing operational overhead and driving measurable cost savings.",
       ],
     },
   ]
@@ -178,20 +126,13 @@ const Experience = () => {
                   </ul>
                 </div>
 
-                <div>
-                  <h4 className="text-lg font-semibold mb-3 text-foreground">Technologies Used</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {job.technologies.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="outline"
-                        className="hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
+                {job.technologies && (
+                  <div>
+                    <p className="text-sm text-muted-foreground">
+                      <span className="font-semibold text-foreground">Technologies:</span> {job.technologies}
+                    </p>
                   </div>
-                </div>
+                )}
               </CardContent>
             </Card>
           ))}

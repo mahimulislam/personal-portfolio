@@ -5,46 +5,22 @@ import { Badge } from "@/components/ui/badge"
 const Education = () => {
   const education = [
     {
-      degree: "M.S. in Computer Science",
+      degree: "Master of Science in Computer Science",
       institution: "Georgia Institute of Technology",
-      status: "Graduated",
-      gpa: "3.7/4.0",
-      specialization: "Interactive Intelligence",
       period: "Jan 2024 – Dec 2025",
       location: "Atlanta, GA",
-      type: "Graduate",
-      courses: [
-        "Machine Learning",
-        "Software Development Process",
-        "Database Systems",
-        "Human-Computer Interaction",
-      ],
-      achievements: [
-        "Graduate Research Assistant",
-        "Active in AI/ML research projects (SAMI)",
+      details: [
+        "GPA: 3.7/4.0",
+        "Specialization: Interactive Intelligence",
       ],
     },
     {
-      degree: "B.Sc. in Computer Science and Engineering",
-      institution: "Ahsanullah University of Science and Technology",
-      status: "Graduated",
-      gpa: "3.43/4.0",
-      thesis: "Hybrid Text Summarization for Bangla Documents",
+      degree: "Bachelor of Science in Computer Science & Engineering",
+      institution: "Ahsanullah University of Science & Technology",
       period: "Nov 2015 – Feb 2020",
       location: "Dhaka, Bangladesh",
-      type: "Undergraduate",
-      courses: [
-        "Data Structures & Algorithms",
-        "Software Engineering",
-        "Database Management",
-        "Operating Systems",
-        "Computer Networks",
-        "Artificial Intelligence",
-      ],
-      achievements: [
-        "Published research in International Journal of Computer Vision and Signal Processing",
-        "Outstanding academic performance",
-        "Active member of programming club",
+      details: [
+        "GPA: 3.43/4.0",
       ],
     },
   ]
@@ -74,12 +50,7 @@ const Education = () => {
                       <div className="p-2 bg-primary/10 rounded-lg text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200">
                         <GraduationCap className="h-6 w-6" />
                       </div>
-                      <Badge
-                        variant={edu.status === "In Progress" ? "default" : "secondary"}
-                        className={edu.status === "In Progress" ? "gradient-primary" : ""}
-                      >
-                        {edu.status}
-                      </Badge>
+                      <Badge variant="secondary">Graduated</Badge>
                     </div>
 
                     <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors duration-200">
@@ -95,64 +66,21 @@ const Education = () => {
                       <span className="font-medium">{edu.period}</span>
                     </div>
                     <p className="text-muted-foreground">{edu.location}</p>
-                    <Badge variant="outline">{edu.type}</Badge>
                   </div>
                 </div>
               </CardHeader>
 
               <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-2">
-                      <Award className="h-5 w-5 text-primary" />
-                      <h4 className="font-semibold text-foreground">Academic Performance</h4>
-                    </div>
-                    <div className="space-y-2 ml-7">
-                      <p className="text-muted-foreground">
-                        <span className="font-medium">GPA:</span> {edu.gpa}
-                      </p>
-                      {edu.specialization && (
-                        <p className="text-muted-foreground">
-                          <span className="font-medium">Specialization:</span> {edu.specialization}
-                        </p>
-                      )}
-                      {edu.thesis && (
-                        <p className="text-muted-foreground">
-                          <span className="font-medium">Thesis:</span> {edu.thesis}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-2">
-                      <BookOpen className="h-5 w-5 text-primary" />
-                      <h4 className="font-semibold text-foreground">Key Achievements</h4>
-                    </div>
-                    <ul className="space-y-1 ml-7">
-                      {edu.achievements.map((achievement, i) => (
-                        <li key={i} className="flex items-start space-x-2">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
-                          <span className="text-muted-foreground text-sm">{achievement}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-foreground">Relevant Coursework</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {edu.courses.map((course) => (
-                      <Badge
-                        key={course}
-                        variant="outline"
-                        className="text-sm hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                      >
-                        {course}
-                      </Badge>
+                  <h4 className="font-semibold text-foreground">Highlights</h4>
+                  <ul className="space-y-1 ml-7">
+                    {edu.details.map((detail, i) => (
+                      <li key={i} className="flex items-start space-x-2">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                        <span className="text-muted-foreground text-sm">{detail}</span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               </CardContent>
             </Card>

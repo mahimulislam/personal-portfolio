@@ -1,97 +1,54 @@
-import { BookOpen, Calendar, Users } from "lucide-react"
+import { BookOpen, Calendar } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 const Publications = () => {
   const publications = [
     {
-      title: "A Metacognitive Architecture for Correcting LLM Errors in AI Agents",
-      venue: "IAAI-26: Emerging Applications of AI",
-      year: "2026",
-      status: "In Press",
-      type: "Conference Paper",
-      authors: "Mahimul Islam, et al.",
-      description:
-        "Introduced a two-level metacognitive architecture that localizes LLM-induced errors during entity extraction, matchmaking, and response generation. Developed a TMK-based self-model enabling the agent to introspect on its own pipeline and identify the source of misinterpretation or hallucination errors. Implemented an integrated KBAI–LLM approach combining symbolic reasoning (TMK, knowledge graph, solution library) with generative models (ChatGPT) for adaptation.",
-      highlights: [
-        "Two-level metacognitive architecture",
-        "TMK-based self-model for introspection",
-        "Integrated KBAI-LLM approach",
-        "Error localization in LLM pipelines",
-      ],
-      keywords: ["AI Agents", "Metacognition", "LLM", "Knowledge-Based AI"],
-    },
-    {
       title: "Correcting LLM Errors: A Metacognitive Architecture for ToM Adaptation in AI Agents",
       venue: "ToM4AI Workshop at AAAI 2026",
-      year: "Nov 2025",
-      status: "Published",
-      type: "Workshop Paper",
-      authors: "Mahimul Islam, et al.",
+      period: "Jan 2026 (In Press)",
       description:
-        "Published workshop paper presenting a metacognitive ToM adaptation framework that integrates KBAI and GenAI for self-revision in social AI agents. Evaluated on real-world student feedback from a deployed AI social agent, achieving a 75% successful adaptation rate across 20 cases.",
+        "Workshop paper presenting a metacognitive ToM adaptation framework that integrates KBAI and GenAI for self-revision in social AI agents.",
       highlights: [
-        "Metacognitive ToM adaptation framework",
-        "75% successful adaptation rate",
-        "Real-world student feedback evaluation",
-        "KBAI and GenAI integration",
+        "Evaluation on real-world student feedback from a deployed AI social agent with a 75% successful adaptation rate across 20 cases.",
+        "Framework bridges KBAI, knowledge graphs, and generative LLM models to localize and correct reasoning drift.",
       ],
-      keywords: ["Theory of Mind", "AI Agents", "Metacognition", "Social AI"],
+    },
+    {
+      title: "A Metacognitive Architecture for Correcting LLM Errors in AI Agents",
+      venue: "IAAI-26: Emerging Applications of AI",
+      period: "Jan 2026 (In Press)",
+      description:
+        "Introduced a two-level metacognitive architecture that localizes LLM-induced errors during entity extraction, matchmaking, and response generation.",
+      highlights: [
+        "Developed a TMK-based self-model that lets the agent introspect on its pipeline and identify sources of misinterpretation or hallucination.",
+        "Implemented an integrated KBAI–LLM approach combining symbolic reasoning (TMK, knowledge graph, solution library) with generative models (ChatGPT) for adaptation.",
+      ],
     },
     {
       title: "Adaptable Social AI Agents",
       venue: "ToM4AI Workshop at AAAI 2025",
-      year: "May 2025",
-      status: "Published",
-      type: "Workshop Paper",
-      authors: "Mahimul Islam, et al.",
+      period: "May 2025",
       description:
-        "Workshop paper presenting episodic self-explanation capabilities for SAMI. Demonstrated how social AI agents can adapt their behavior based on student interactions and feedback.",
+        "Workshop paper presenting episodic self-explanation capabilities for SAMI and how social AI agents adapt their behavior based on student interactions and feedback.",
       highlights: [
-        "Episodic self-explanation capabilities",
-        "Social AI agent adaptation",
-        "Student interaction analysis",
-        "Deployed in OMSCS program",
+        "Published paper covering episodic self-explanation for deployed SAMI social AI agent.",
+        "Demonstrated how the agent adapts behavior through interpretability signals to support OMSCS students.",
       ],
-      keywords: ["Social AI", "Adaptable Agents", "Self-Explanation", "Education"],
     },
     {
       title: "Hybrid Text Summarizer for Bangla Documents",
-      venue: "International Journal of Computer Vision and Signal Processing (IJCVSP)",
-      year: "Nov 2020",
-      status: "Published",
-      type: "Journal Article",
-      authors: "Mahimul Islam (First Author), et al.",
-      volume: "Vol 10, No. 1",
+      venue: "International Journal of Computer Vision and Signal Processing (IJCVSP), Vol 10, No. 1",
+      period: "Nov 2020",
       description:
-        "Developed a hybrid text summarization approach combining extractive and abstractive methods specifically designed for Bangla language documents. The research addresses unique challenges in Bangla NLP and demonstrates improved summarization quality over existing methods.",
+        "Journal paper combining extractive and abstractive methods for Bangla text summarization, addressing the language’s structural challenges and improving summarization quality.",
       highlights: [
-        "First author publication",
-        "Novel hybrid approach",
-        "Bangla language processing",
-        "Improved summarization quality",
+        "First Author.",
+        "Topic: Natural Language Processing, Text Summarization & Machine Learning.",
       ],
-      keywords: ["NLP", "Text Summarization", "Machine Learning", "Bangla"],
     },
   ]
-
-  const getStatusColor = (status: string) => {
-    const colors = {
-      Published: "bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400",
-      "In Press": "bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400",
-      "Under Review": "bg-orange-100 text-orange-800 dark:bg-orange-900/20 dark:text-orange-400",
-    }
-    return colors[status as keyof typeof colors] || "bg-gray-100 text-gray-800"
-  }
-
-  const getTypeColor = (type: string) => {
-    const colors = {
-      "Conference Paper": "bg-purple-100 text-purple-800 dark:bg-purple-900/20 dark:text-purple-400",
-      "Workshop Paper": "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/20 dark:text-indigo-400",
-      "Journal Article": "bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400",
-    }
-    return colors[type as keyof typeof colors] || "bg-gray-100 text-gray-800"
-  }
 
   return (
     <section className="py-20 bg-gradient-to-br from-background to-muted/30">
@@ -114,34 +71,24 @@ const Publications = () => {
               <CardHeader className="space-y-4">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                   <div className="space-y-3">
-                    <div className="flex items-center space-x-3 flex-wrap gap-2">
+                    <div className="flex items-center space-x-3">
                       <div className="p-2 bg-primary/10 rounded-lg text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-200">
                         <BookOpen className="h-5 w-5" />
                       </div>
-                      <Badge className={getTypeColor(pub.type)}>{pub.type}</Badge>
-                      <Badge variant="outline" className={getStatusColor(pub.status)}>
-                        {pub.status}
-                      </Badge>
+                      <Badge variant="secondary">{pub.period}</Badge>
                     </div>
 
                     <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors duration-200 leading-tight">
                       {pub.title}
                     </CardTitle>
 
-                    <div className="space-y-1">
-                      <p className="text-base font-semibold text-muted-foreground">{pub.venue}</p>
-                      {pub.volume && <p className="text-sm text-muted-foreground">{pub.volume}</p>}
-                    </div>
+                    <p className="text-base font-semibold text-muted-foreground">{pub.venue}</p>
                   </div>
 
                   <div className="space-y-2 lg:text-right">
                     <div className="flex items-center space-x-2 text-muted-foreground lg:justify-end">
                       <Calendar className="h-4 w-4" />
-                      <span className="font-medium">{pub.year}</span>
-                    </div>
-                    <div className="flex items-center space-x-2 text-muted-foreground lg:justify-end">
-                      <Users className="h-4 w-4" />
-                      <span className="text-sm">{pub.authors}</span>
+                      <span className="font-medium">{pub.period}</span>
                     </div>
                   </div>
                 </div>
@@ -151,7 +98,7 @@ const Publications = () => {
                 <p className="text-muted-foreground leading-relaxed">{pub.description}</p>
 
                 <div className="space-y-3">
-                  <h4 className="font-semibold text-foreground">Key Contributions</h4>
+                  <h4 className="font-semibold text-foreground">Highlights</h4>
                   <ul className="space-y-2">
                     {pub.highlights.map((highlight, i) => (
                       <li key={i} className="flex items-start space-x-3">
@@ -160,21 +107,6 @@ const Publications = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                <div className="space-y-3">
-                  <h4 className="font-semibold text-foreground">Keywords</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {pub.keywords.map((keyword) => (
-                      <Badge
-                        key={keyword}
-                        variant="outline"
-                        className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                      >
-                        {keyword}
-                      </Badge>
-                    ))}
-                  </div>
                 </div>
               </CardContent>
             </Card>
