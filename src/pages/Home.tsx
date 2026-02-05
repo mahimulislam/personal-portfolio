@@ -50,12 +50,8 @@ const Home = () => {
 
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am a Full Stack Engineer who delivers high-availability software across the most regulated verticals—Healthcare and Manufacturing.
-                At Maeknit I lead the technical evolution of the Digital Factory Marketplace, architecting a performance-first Next.js frontend deployed
-                on AWS ECS/Fargate and wiring it to a resilient Odoo ERP backend. My focus is building the connective tissue between marketplaces,
-                AI-driven onboarding, factory bidding, and the shop-floor lifecycle so business users can scale without manual handoffs.
-                I don't just write code; I design the scalable digital infrastructure that lets companies out-scale their competition while preserving
-                compliance, reliability, and speed.
+              I have a track record of delivering high-availability software in two of the most regulated and operationally complex sectors: Healthcare and Manufacturing. At Maeknit, I led the technical evolution of a Digital Factory Marketplace, architecting a high-performance Next.js frontend deployed on AWS ECS/Fargate. My core focus was building the "connective tissue" between this marketplace and a robust Odoo ERP backend. I designed custom modules in Python and OWL to automate the entire manufacturing lifecycle, from AI-driven client onboarding and factory bidding to shop-floor R&D and delivery. This integrated ecosystem was instrumental in securing a $3M venture investment and enabling global operational scale.
+              Prior to this, I specialized in secure data movements at Genome Medical, where I architected a large-scale patient data migration portal. I automated high-volume clinical transfers with zero data loss, ensuring 100% compliance in a high-stakes HIPAA environment. I don't just write code; I design the scalable digital infrastructure that allows businesses to out-scale their competition.
               </p>
 
               <div className="flex flex-wrap gap-2">
