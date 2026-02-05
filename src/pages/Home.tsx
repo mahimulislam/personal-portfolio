@@ -6,12 +6,24 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 const Home = () => {
-  const skills = ["React.js", "Node.js", "Python", "AWS", "TypeScript", "Docker", "Odoo", "Next.js"]
+  const skills = [
+    "Next.js",
+    "React.js",
+    "Vue.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Python",
+    "Node.js",
+    "AWS ECS/Fargate",
+    "Docker",
+    "PostgreSQL",
+    "Redis",
+  ]
 
   const handleResumeDownload = () => {
     const link = document.createElement("a")
-    link.href = "/resume/Mahimul_Islam_Resume.pdf"
-    link.download = "Mahimul_Islam_Resume.pdf"
+    link.href = "/resume/Mahimul_Islam_Resume_Feb4_2026.pdf"
+    link.download = "Mahimul_Islam_Resume_Feb4_2026.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -38,13 +50,12 @@ const Home = () => {
 
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am an experienced Full Stack Engineer with{" "}
-                <span className="text-primary font-semibold">6+ years of expertise</span> building scalable web applications, backend systems, 
-                and automated business workflows using React.js, Vue.js, TypeScript, Node.js, Python, and AWS. Previously delivered secure, 
-                HIPAA-compliant solutions in digital health, and now lead digital transformation at Maeknit by engineering end-to-end Odoo workflows, 
-                manufacturing tools, inventory systems, and financial modeling platforms. Skilled in designing user-centric, secure, 
-                and high-performance applications while improving operational efficiency through automation, testing, and process optimization.
-                Strong collaborator across cross-functional teams, leveraging agile practices, cloud infrastructure, and relational databases to deliver reliable, industry-focused solutions.
+                I am a Full Stack Engineer who delivers high-availability software across the most regulated verticals—Healthcare and Manufacturing.
+                At Maeknit I lead the technical evolution of the Digital Factory Marketplace, architecting a performance-first Next.js frontend deployed
+                on AWS ECS/Fargate and wiring it to a resilient Odoo ERP backend. My focus is building the connective tissue between marketplaces,
+                AI-driven onboarding, factory bidding, and the shop-floor lifecycle so business users can scale without manual handoffs.
+                I don't just write code; I design the scalable digital infrastructure that lets companies out-scale their competition while preserving
+                compliance, reliability, and speed.
               </p>
 
               <div className="flex flex-wrap gap-2">
@@ -141,9 +152,9 @@ const Home = () => {
                 </div>
 
                 <div className="pt-4 text-left space-y-3">
-                  <div className="flex items-center text-sm text-muted-foreground">
+                <div className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse" />
-                    <span>Currently Full Stack Engineer at MAEKNIT Inc</span>
+                    <span>Leading the Digital Factory Marketplace at Maeknit, Inc.</span>
                   </div>
                   <div className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
@@ -151,7 +162,7 @@ const Home = () => {
                   </div>
                   <div className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-purple-500 rounded-full mr-3" />
-                    <span>Specialized in healthcare & e-commerce platforms</span>
+                    <span>Specialized in high-availability infrastructure for healthcare and manufacturing</span>
                   </div>
                 </div>
               </div>

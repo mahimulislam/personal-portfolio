@@ -24,15 +24,15 @@ const Projects = () => {
     {
       title: "Maeknit ERP System",
       description:
-        "Built the company's end-to-end business workflow in Odoo, enabling seamless progression from Website Lead Generation through CRM Pipeline, Sales Orders, R&D, Manufacturing Shopfloor, and Delivery. Developed a full MFG shopfloor interface using OWL with integrated instructions, CADs, attachments, progress tracking, and operation-specific logic.",
-      tech: ["Python", "OWL", "JavaScript", "XML", "PostgreSQL", "Odoo.sh"],
+        "Engineered the connective workflow layer between the Digital Factory Marketplace and Odoo ERP, automating the full cycle from AI onboarding and factory bidding to shop-floor execution and delivery. Delivered a custom OWL-driven manufacturing interface with CAD/Excalidraw integration, instructions, attachments, and progress tracking to keep operations predictable.",
+      tech: ["Next.js", "React.js", "Python", "OWL", "JavaScript", "AWS ECS/Fargate", "PostgreSQL", "Odoo.sh"],
       category: "Enterprise Software",
       icon: <Database className="h-6 w-6" />,
       highlights: [
-        "7+ custom Odoo modules",
-        "Full MFG shopfloor interface",
-        "Excalidraw integration for R&D",
-        "End-to-end business workflow",
+        "Digital Factory Marketplace workflow automation",
+        "High-performance Next.js frontend on AWS ECS/Fargate",
+        "7+ custom Odoo modules spanning CRM, MRP, and manufacturing",
+        "CAD/Excalidraw-enabled R&D + shop-floor tracking",
       ],
       status: "Current Work",
       period: "Mar 2025 – Present",
@@ -40,8 +40,8 @@ const Projects = () => {
     {
       title: "Maeknit Website & Financial Dashboard",
       description:
-        "Built and launched the company's public-facing website using React.js, Next.js, HTML, CSS, delivering a fully responsive branded experience. Architected and built a financial modeling dashboard for margin planning, capacity simulation, and sensitivity analysis.",
-      tech: ["React.js", "Next.js", "HTML", "CSS", "JavaScript"],
+        "Built and launched the public-facing marketing website and a financial modeling dashboard that feeds scenario planning into the Digital Factory Marketplace. The dashboard layers margin planning, capacity simulation, and sensitivity analysis to guide strategic pricing.",
+      tech: ["React.js", "Next.js", "Tailwind CSS", "HTML", "CSS", "JavaScript", "AWS"],
       category: "Web Development",
       icon: <Code className="h-6 w-6" />,
       highlights: [
@@ -56,11 +56,11 @@ const Projects = () => {
     {
       title: "Genome Medical Patient Migration",
       description:
-        "Developed an end-to-end solution for seamless patient migration between Genome Medical and GeneMatters platforms. Designed secure APIs and integrated with Node.js and Python-based systems, ensuring HIPAA-compliant data transfer with a React.js + Redux-powered one-click UI.",
+        "Developed a HIPAA-compliant portal to migrate patient data between Genome Medical and GeneMatters with zero data loss. Designed secure Node.js/Python APIs and a React.js + Redux-powered one-click UI to automate high-volume clinical transfers while preserving auditability.",
       tech: ["Node.js", "Python", "AWS", "React.js", "Redux", "Flask"],
       category: "Healthcare",
       icon: <Database className="h-6 w-6" />,
-      highlights: ["HIPAA-compliant", "Automated data transfer", "One-click UI", "100% secure migration"],
+      highlights: ["HIPAA-compliant with zero data loss", "Automated clinical transfers", "One-click migration UI", "100% compliance and auditability"],
       status: "Completed",
       period: "2022-2025",
     },
