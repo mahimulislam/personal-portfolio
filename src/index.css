@@ -935,7 +935,6 @@ figcaption,
   height: 400px;
   object-fit: cover;
   object-position: center 35%;
-  filter: grayscale(1);
 }
 .portrait figcaption {
   font-size: 8px;

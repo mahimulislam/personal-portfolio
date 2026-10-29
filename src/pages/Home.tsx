@@ -148,11 +148,11 @@ export default function Home() {
         <div className="about-grid">
           <figure className="portrait">
             <img
-              src="/images/mahimul.webp"
+              src="/images/MahimuL_Islam_Pro.png"
               alt="Mahimul Islam"
               loading="lazy"
-              width="600"
-              height="700"
+              width="1083"
+              height="1453"
             />
             <figcaption>MAHIMUL ISLAM / NEW YORK CITY</figcaption>
             <span className="portrait-mark" aria-hidden="true">
