@@ -1,175 +1,20 @@
-"use client"
+import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import SectionHeading from "@/components/portfolio/SectionHeading";
+import SystemMap from "@/components/portfolio/SystemMap";
+import WorkList from "@/components/portfolio/WorkList";
+import { publications, skillGroups } from "@/data/portfolio";
 
-import { Github, Linkedin, Mail, MapPin, Download } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-
-const Home = () => {
-  const skills = [
-    "Next.js",
-    "React.js",
-    "Vue.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "Python",
-    "Node.js",
-    "AWS ECS/Fargate",
-    "Docker",
-    "PostgreSQL",
-    "Redis",
-  ]
-
-  const handleResumeDownload = () => {
-    const link = document.createElement("a")
-    link.href = "/resume/Mahimul_Islam_Resume_Feb4_2026.pdf"
-    link.download = "Mahimul_Islam_Resume_Feb4_2026.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
-
-  return (
-    <section className="min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column - Content */}
-          <div className="space-y-8 animate-fade-in">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2 text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                <span>Jamaica, NY</span>
-              </div>
-
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Hi, I'm <span className="gradient-primary bg-clip-text text-transparent">Mahimul Islam</span>
-              </h1>
-
-              <p className="text-2xl text-muted-foreground font-medium">Full Stack Engineer</p>
-            </div>
-
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-              I have a track record of delivering high-availability software in two of the most regulated and operationally complex sectors: Healthcare and Manufacturing. At Maeknit, I led the technical evolution of a Digital Factory Marketplace, architecting a high-performance Next.js frontend deployed on AWS ECS/Fargate. My core focus was building the "connective tissue" between this marketplace and a robust Odoo ERP backend. I designed custom modules in Python and OWL to automate the entire manufacturing lifecycle, from AI-driven client onboarding and factory bidding to shop-floor R&D and delivery. This integrated ecosystem was instrumental in securing a $3M venture investment and enabling global operational scale.
-              Prior to this, I specialized in secure data movements at Genome Medical, where I architected a large-scale patient data migration portal. I automated high-volume clinical transfers with zero data loss, ensuring 100% compliance in a high-stakes HIPAA environment. I don't just write code; I design the scalable digital infrastructure that allows businesses to out-scale their competition.
-              </p>
-
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="text-sm py-1 px-3 hover:bg-primary hover:text-primary-foreground transition-colors duration-200"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={handleResumeDownload}
-                size="lg"
-                className="gradient-primary shadow-elegant hover:shadow-lg transition-all duration-200 group"
-              >
-                <Download className="h-5 w-5 mr-2 group-hover:animate-bounce" />
-                Download Resume
-              </Button>
-
-              <div className="flex space-x-3">
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200 bg-transparent"
-                  asChild
-                >
-                  <a
-                    href="https://github.com/mahimulislam"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub Profile"
-                  >
-                    <Github className="h-5 w-5" />
-                  </a>
-                </Button>
-
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200 bg-transparent"
-                  asChild
-                >
-                  <a
-                    href="https://linkedin.com/in/mahimulislam"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn Profile"
-                  >
-                    <Linkedin className="h-5 w-5" />
-                  </a>
-                </Button>
-
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="h-12 w-12 hover:bg-primary hover:text-primary-foreground transition-colors duration-200 bg-transparent"
-                  asChild
-                >
-                  <a href="mailto:mahimulislam@gmail.com" aria-label="Email">
-                    <Mail className="h-5 w-5" />
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Profile Card */}
-          <div className="flex justify-center lg:justify-end">
-            <Card className="p-8 shadow-elegant glow max-w-md w-full animate-float">
-              <div className="text-center space-y-6">
-                <div className="relative">
-                  <div className="w-48 h-48 mx-auto rounded-full overflow-hidden ring-4 ring-primary/20 shadow-lg">
-                    <img
-                      src="/images/mahimul.jpg"
-                      alt="Mahimul Islam - Full Stack Engineer"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-primary-foreground font-bold text-lg">✨</span>
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Mahimul Islam</h3>
-                  <p className="text-muted-foreground">Full Stack Engineer</p>
-                </div>
-
-                <div className="pt-4 text-left space-y-3">
-                <div className="flex items-center text-sm text-muted-foreground">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse" />
-                    <span>Leading the Digital Factory Marketplace at Maeknit, Inc.</span>
-                  </div>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
-                    <span>M.S. in Computer Science at Georgia Tech (3.7 GPA)</span>
-                  </div>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-3" />
-                    <span>Specialized in high-availability infrastructure for healthcare and manufacturing</span>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-
-
-      </div>
+export default function Home() {
+  return <>
+    <section className="hero page-width">
+      <div className="hero-topline"><span className="eyebrow"><span className="status-dot" /> A PRACTICE IN SOFTWARE & INTELLIGENCE</span><span className="hero-edition">PERSONAL PORTFOLIO / 2026</span></div>
+      <div className="hero-grid"><div className="hero-copy"><h1>Engineering<br />with a <span className="serif-word">human</span><br />in the loop<span className="accent-text">.</span></h1><p className="hero-intro">I’m Mahimul. I build the systems behind the screen—and explore how AI can work better with the people in front of it.</p><div className="hero-actions"><a className="primary-link" href="#selected-work">Explore my work <ArrowDown size={17} /></a><Link className="text-link" to="/publications">The research side <ArrowUpRight size={17} /></Link></div><div className="hero-signoff"><span className="tiny-cross">✳</span><span>FULL STACK SOFTWARE ENGINEER & AI RESEARCHER<br /><span>NEW YORK CITY · M.S. COMPUTER SCIENCE, GEORGIA TECH</span></span></div></div><SystemMap /></div>
     </section>
-  )
+    <div className="practice-strip"><div className="page-width"><span>FROM IDEA TO PRODUCTION</span><span>SOFTWARE ENGINEERING</span><i>✳</i><span>APPLIED AI RESEARCH</span><i>✳</i><span>HUMAN EXPERTISE</span></div></div>
+    <section className="section page-width" id="selected-work"><SectionHeading number="01" label="SELECTED WORK" title={<>Different domains.<br /><span className="serif-word">One connected thread.</span></>}><p>Real systems. Real constraints.<br />A few things I’ve helped bring to life.</p></SectionHeading><WorkList featured /></section>
+    <section className="research-feature" id="research"><div className="page-width"><SectionHeading number="02" label="RESEARCH & CURIOSITY" title={<>What if AI could<br /><span className="serif-word">think about its thinking?</span></>} /><div className="research-feature-grid"><div className="research-aside"><p>That question connects my work on metacognitive agents at Georgia Tech’s Design Intelligence Lab to human-in-the-loop manufacturing AI at MAEKNIT.</p><div className="research-stat"><strong>11,000<span>+</span></strong><span>STUDENTS HAVE USED SAMI<br />ACROSS TEN SEMESTERS</span></div><Link className="text-link" to="/publications">Research, publications & service <ArrowUpRight size={16} /></Link></div><div className="paper-list">{publications.slice(0, 3).map((paper, i) => <Link to={`/publications#paper-${i}`} key={paper.title} className="paper-preview"><span className="eyebrow">{paper.date} / {i === 0 ? "IAAI" : "ToM4AI"}</span><h3>{paper.title}</h3><span className="paper-venue">{paper.venue}<ArrowUpRight size={19} /></span></Link>)}</div></div></div></section>
+    <section className="section page-width about-section"><SectionHeading number="03" label="THE PERSON BEHIND THE WORK" title={<>Curious by nature.<br /><span className="serif-word">Hands-on by choice.</span></>} /><div className="about-grid"><figure className="portrait"><img src="/images/mahimul.webp" alt="Mahimul Islam" loading="lazy" width="600" height="700" /><figcaption>MAHIMUL ISLAM / NEW YORK CITY</figcaption><span className="portrait-mark" aria-hidden="true">mi.</span></figure><div className="about-copy"><p className="large-copy">I like the space where a complex problem becomes something people can actually use.</p><p>Over 6+ years, I’ve built production software across healthcare, manufacturing, e-commerce, and B2B SaaS. Today, I lead engineering execution at MAEKNIT and research how AI can support specialized human expertise.</p><p>I hold an M.S. in Computer Science from Georgia Tech, specializing in Interactive Intelligence. My work moves between system architecture, thoughtful interfaces, and agents that can learn from their mistakes.</p><div className="skill-table">{skillGroups.map(group => <div key={group.label}><span>{group.label}</span><p>{group.skills}</p></div>)}</div><Link className="text-link" to="/experience">Follow the journey <ArrowRight size={17} /></Link></div></div></section>
+    <section className="contact-band"><div className="page-width"><span className="eyebrow">04 / THE NEXT CONVERSATION</span><Link to="/contact">Let’s make<br />something <span className="serif-word">matter.</span><ArrowUpRight aria-hidden="true" /></Link><div className="contact-band-bottom"><span>Engineering, AI research, or a good question.<br />I’m always interested in a thoughtful conversation.</span><a href="mailto:mahimulislam@gmail.com">mahimulislam@gmail.com <ArrowUpRight size={16} /></a></div></div></section>
+  </>;
 }
-
-export default Home
