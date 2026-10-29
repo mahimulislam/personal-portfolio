@@ -1,0 +1,395 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Mahimul Islam's CV},
+    pdfauthor={Mahimul Islam},
+    pdfcreator={Mahimul Islam},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+\fi
+
+\usepackage{charter}
+
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    -1pt
+}{
+    0.3 cm
+}{
+    0.2 cm
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentryyy}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 2 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{twocolentrys}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 6.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\begin{document}
+
+\begin{center}
+{\fontsize{25pt}{25pt}\selectfont \textbf{Mahimul Islam}} \\[5pt]
+{\fontsize{12pt}{12pt}\selectfont Full Stack Software Engineer \& AI Researcher} \\[5pt]
+{\fontsize{11pt}{11pt}\selectfont MS in Computer Science, Georgia Institute of Technology} \\[5pt]
+
+\textbf{Location:} New York City, NY \quad | \quad
+\textbf{Email:} \href{mailto:mahimulislam@gmail.com}{mahimulislam@gmail.com} \quad | \quad
+\textbf{Phone:} \href{tel:+1-470-909-8452}{470-909-8452}
+
+\textbf{Links:}
+\href{https://linkedin.com/in/mahimulislam}{LinkedIn} |
+\href{https://mahimulislam.com}{Portfolio} |
+\href{https://github.com/mahimulislam}{GitHub}
+\end{center}
+
+% ── SUMMARY ─────────────────────────────────────────────────────────────
+\section{Summary}
+
+\begin{onecolentry}
+Full Stack Software Engineer with 6+ years of experience building and scaling production systems across healthcare, manufacturing, e-commerce, and B2B SaaS. Experienced owning the full software lifecycle from system architecture and API development to cloud deployment, internal operations, and customer-facing products using Python, TypeScript, React, Next.js, Node.js, PostgreSQL, AWS, and Odoo. Applied AI researcher with work in metacognitive AI agents, knowledge-based AI, LLMs, and Task--Method--Knowledge architectures through Georgia Tech's Design Intelligence Lab.
+\end{onecolentry}
+
+% ── SKILLS ──────────────────────────────────────────────────────────────
+\section{Skills}
+
+\begin{onecolentry}
+\textbf{Languages:} Python, TypeScript, JavaScript, SQL \\[3pt]
+\textbf{Frameworks:} React.js, Next.js, Node.js, Flask, Django, Vue.js, Odoo OWL \\[3pt]
+\textbf{Databases:} PostgreSQL, Neo4j \\[3pt]
+\textbf{Cloud and DevOps:} AWS (ECS, Fargate, EC2, S3, RDS), Docker, CI/CD (GitLab CI/CD, Bitbucket Pipelines) \\[3pt]
+\textbf{AI/ML:} OpenAI APIs, LLMs, Knowledge-Based AI, TMK architectures, AI agents \\[3pt]
+\textbf{Other:} REST APIs, JSON-RPC, SSE, SendGrid, Excalidraw, Jira, Confluence, Selenium, Cypress, Jest, Mocha
+\end{onecolentry}
+
+% ── EXPERIENCE ──────────────────────────────────────────────────────────
+\section{Experience}
+
+\begin{twocolentry}{Mar 2025 -- Present}
+\textbf{Full Stack Software Engineer \& AI Researcher}, MAEKNIT, Inc -- Jamaica, NY
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\begin{highlights}
+
+\item \textbf{Lead engineering execution across a team of four engineers}, owning core architecture, implementation, deployment, and production support for MAEKNIT's client, factory, and internal platforms while mentoring team members and working directly with the CEO and CTO.
+
+\item \textbf{Designed and led development of a Multi-Portal RBAC Architecture} for Admin, Client, and Factory users using \textbf{Next.js, React.js, and TypeScript}, supporting collections, garments, samples, swatches, documents, quotations, and collaboration workflows.
+
+\item \textbf{Integrated MAEKNIT's software platform with Odoo 18 Enterprise}, developing custom \textbf{Python and OWL} functionality and \textbf{JSON-RPC} integrations across CRM, Sales, R\&D, MRP, Inventory, and warehouse operations.
+
+\item \textbf{Built a Full CRM and Client Onboarding Pipeline} with bidirectional Odoo synchronization, automated portal account creation, credential delivery through \textbf{SendGrid}, activity tracking, and collection assignment.
+
+\item \textbf{Built AI-assisted client workflows} using \textbf{OpenAI APIs} to summarize meeting transcripts, structure project requirements, and generate draft client proposals surfaced through the internal and client portals.
+
+\item \textbf{Developing KnitDraft / TMK-Knit}, a human-in-the-loop AI research system applying \textbf{Task--Method--Knowledge modeling} to assist industrial flat-knitting machine program generation while keeping expert review and validation in the workflow.
+
+\item \textbf{Designed the KnitDraft data pipeline} around machine programs, panel specifications, measurement data, swatch results, program versions, timing information, and manufacturing knowledge captured through MAEKNIT's development workflow.
+
+\item \textbf{Developed a Document and Asset Management System} using \textbf{AWS S3} presigned uploads, client visibility controls, reusable assets, project boards, and \textbf{Excalidraw}-based visual collaboration.
+
+\item \textbf{Built real-time collaboration features} using \textbf{Server-Sent Events (SSE)}, including project messaging, activity updates, and cross-portal synchronization.
+
+\item \textbf{Engineered a Factory Quotation System} allowing internal teams to broadcast requirements to manufacturing partners, collect competitive quotations, and connect accepted work into downstream Odoo Sales, R\&D, and MRP workflows.
+
+\item \textbf{Technologies:} Python, Odoo, OWL, JavaScript/TypeScript, Next.js, React.js, Node.js, AWS (ECS, Fargate, RDS, S3), PostgreSQL, Docker, SendGrid, Excalidraw, SSE, JSON-RPC, OpenAI APIs.
+
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.3 cm}
+
+\begin{twocolentry}{Aug 2022 -- Jan 2025}
+\textbf{Full Stack Engineer}, Genome Medical Inc -- South San Francisco, CA
+\end{twocolentry}
+
+\vspace{0.1 cm}
+
+\begin{onecolentry}
+\begin{highlights}
+
+\item \textbf{Built and maintained healthcare applications} across Admin, Patient, and Provider portals using \textbf{React.js, Vue.js, Python Flask, Node.js, and PostgreSQL} in a HIPAA-regulated environment.
+
+\item \textbf{Enabled secure patient data migration} between Genome Medical and GeneMatters with zero data loss using a \textbf{React.js + Redux} workflow and secure REST APIs.
+
+\item \textbf{Architected and deployed cloud-based services} using \textbf{AWS ECS, Fargate, EC2, S3, RDS}, Docker, Flask, Node.js, and PostgreSQL.
+
+\item \textbf{Strengthened platform security} by identifying and resolving more than \textbf{50 vulnerabilities} using Aikido and Sentry.
+
+\item \textbf{Designed and maintained CI/CD pipelines} using \textbf{GitLab CI/CD} and \textbf{Bitbucket Pipelines}, automating build, testing, and deployment workflows.
+
+\item \textbf{Designed role-based access control systems} with separate permission tiers for administrators, clinical staff, patients, providers, and partner users.
+
+\item \textbf{Built automated test suites} using \textbf{Mocha, Jest, Selenium, and Cypress}, improving release reliability and reducing production defects.
+
+\item \textbf{Provided production support} across customer-facing and internal systems, resolving more than \textbf{150 support tickets} within six months.
+
+\item \textbf{Worked in Agile product teams} through sprint planning, refinement, retrospectives, Jira tracking, and Confluence documentation.
+
+\item \textbf{Technologies:} React.js, Vue.js, TypeScript, JavaScript, Python Flask, Node.js, AWS, Docker, PostgreSQL, Redux, REST APIs, SSE, SendGrid, Aikido, Sentry, GitLab CI/CD, Bitbucket Pipelines, Jira, Confluence.
+
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.3 cm}
+
+\begin{twocolentry}{Jul 2014 -- Jan 2021}
+\textbf{Software Developer}, Cardinal Selling Services -- Huntingburg, IN
+\end{twocolentry}
+
+\vspace{0.10 cm}
+
+\begin{onecolentry}
+\begin{highlights}
+
+\item Developed websites, internal tools, and REST-based web services using \textbf{Python, Django, JavaScript, HTML, CSS, and Bootstrap}.
+
+\item Conducted user requirement analysis and designed relational database structures and \textbf{Entity Relationship Diagrams}.
+
+\item Built and maintained data scraping pipelines and automation tools using \textbf{Python}.
+
+\item Conducted automated testing using \textbf{Mocha, Jest, Selenium, and Cypress}.
+
+\item Worked with relational database design, \textbf{SQL, and PostgreSQL}.
+
+\item Used Linux, Git, pull requests, and Jira as part of day-to-day software development workflows.
+
+\item Built APIs and web systems deployed on \textbf{AWS} using React.js, TypeScript, Node.js, and Docker.
+
+\end{highlights}
+\end{onecolentry}
+
+% ── EDUCATION ───────────────────────────────────────────────────────────
+\section{Education}
+
+\begin{twocolentry}{Jan 2024 -- Dec 2025}
+\textbf{Georgia Institute of Technology}, Master of Science in Computer Science \\
+GPA: 3.7/4.0 \quad \textbf{Specialization:} Interactive Intelligence
+\end{twocolentry}
+
+\vspace{0.15 cm}
+
+\begin{twocolentry}{Nov 2015 -- Feb 2020}
+\textbf{Ahsanullah University of Science and Technology}, BS in Computer Science and Engineering \\
+GPA: 3.43/4.0
+\end{twocolentry}
+
+% ── PUBLICATIONS AND RESEARCH ─────────────────────────────────────────
+\section{Publications and Research}
+
+\begin{twocolentry}{Mar 2025 -- Present}
+\textbf{KnitDraft / TMK-Knit | MAEKNIT}
+\end{twocolentry}
+
+\begin{onecolentry}
+\begin{highlights}
+
+\item Developing a \textbf{human-in-the-loop AI system} for industrial flat-knitting machine programming using \textbf{Task--Method--Knowledge modeling} to assist with initial machine-program generation while preserving expert validation.
+
+\item Designing a structured manufacturing knowledge pipeline using existing machine programs, CAD-derived specifications, measurement data, swatch testing, program revisions, manufacturing timing, and machine-specific knowledge.
+
+\item Exploring how symbolic manufacturing knowledge and LLM-based systems can augment specialized manufacturing workers and reduce repetitive programming effort without removing expert control.
+
+\item \textbf{Technologies:} Python, LLMs, OpenAI APIs, TMK modeling, Odoo, industrial manufacturing data.
+
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{Aug 2024 -- Dec 2025}
+\textbf{SAMI -- Social Agent Mediated Interactions | Design Intelligence Lab}
+\end{twocolentry}
+
+\begin{onecolentry}
+\begin{highlights}
+
+\item Contributed to an AI social agent deployed in Georgia Tech's OMSCS program for ten semesters and used by more than \textbf{11,000 students}.
+
+\item Co-designed a \textbf{two-level metacognitive self-adaptation architecture} integrating Knowledge-Based AI with LLMs to identify and correct reasoning errors.
+
+\item Integrated a \textbf{Task--Method--Knowledge self-model} enabling the agent to localize hallucination, omission, and misinterpretation errors.
+
+\item Built workflows combining \textbf{Neo4j knowledge graphs}, structured knowledge representations, and a solution library for automated adaptation.
+
+\item \textbf{Technologies:} Python, Neo4j, OpenAI LLMs, Docker, Knowledge-Based AI.
+
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{Jan 2026}
+\textbf{A Metacognitive Architecture for Correcting LLM Errors in AI Agents}
+\end{twocolentry}
+
+\begin{onecolentry}
+\textit{IAAI-26: Emerging Applications of AI, AAAI 2026}. Introduced a two-level metacognitive architecture using TMK-based self-modeling and an integrated Knowledge-Based AI and LLM approach to localize and correct hallucination and misinterpretation errors in deployed AI agents.
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{Jan 2026}
+\textbf{Correcting LLM Errors: A Metacognitive Architecture for ToM Adaptation in AI Agents}
+\end{twocolentry}
+
+\begin{onecolentry}
+\textit{ToM4AI Workshop at AAAI 2026}. Presented a metacognitive Theory-of-Mind adaptation framework evaluated on real-world student feedback, achieving a \textbf{75\% successful adaptation rate} across 20 cases.
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{May 2025}
+\textbf{Adaptable Social AI Agents}
+\end{twocolentry}
+
+\begin{onecolentry}
+\textit{ToM4AI Workshop at AAAI 2025}. Presented enhancements to the SAMI social AI agent using \textbf{episodic self-explanation capabilities} to support adaptive and context-dependent reasoning.
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{Nov 2020}
+\textbf{Hybrid Text Summarizer for Bangla Documents}
+\end{twocolentry}
+
+\begin{onecolentry}
+\textit{International Journal of Computer Vision and Signal Processing, Vol. 10, No. 1} \quad \textbf{First Author} \\
+Developed a hybrid extractive summarization system for Bangla text using NLP and machine learning techniques.
+\end{onecolentry}
+
+% ── PROFESSIONAL SERVICE ───────────────────────────────────────────────
+\section{Professional Service}
+
+\begin{onecolentry}
+\begin{highlights}
+
+\item \textbf{Reviewer}, ACM Collective Intelligence Conference.
+
+\item \textbf{Reviewer}, Journal of Intelligent Manufacturing.
+
+\item \textbf{Reviewer}, IEEE INDICON 2026.
+
+\item \textbf{Reviewer}, 8th International Conference on Advances in Distributed Computing and Machine Learning (ICADCML 2027).
+\end{highlights}
+\end{onecolentry}
+
+\end{document}
