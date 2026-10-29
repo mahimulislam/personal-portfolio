@@ -10,5 +10,20 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
-  return <BrowserRouter><Routes><Route path="/" element={<Layout><Home /></Layout>} /><Route path="/experience" element={<Layout><Experience /></Layout>} /><Route path="/projects" element={<Layout><Projects /></Layout>} /><Route path="/education" element={<Layout><Education /></Layout>} /><Route path="/publications" element={<Layout><Publications /></Layout>} /><Route path="/certifications" element={<Layout><Certifications /></Layout>} /><Route path="/contact" element={<Layout><Contact /></Layout>} /><Route path="*" element={<Layout><NotFound /></Layout>} /></Routes></BrowserRouter>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="publications" element={<Publications />} />
+          <Route path="education" element={<Education />} />
+          <Route path="certifications" element={<Certifications />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }

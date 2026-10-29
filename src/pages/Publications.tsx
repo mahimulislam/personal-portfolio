@@ -3,5 +3,101 @@ import { ArrowUpRight } from "lucide-react";
 import { publications, service } from "@/data/portfolio";
 import SectionHeading from "@/components/portfolio/SectionHeading";
 export default function Publications() {
-  return <section className="page-width section inner-page"><div className="page-intro"><p className="eyebrow">RESEARCH / ASK BETTER QUESTIONS</p><h1>Intelligence with<br /><span className="serif-word">a little introspection.</span></h1><p>I explore how AI agents can understand their own reasoning, correct their mistakes, and work alongside human expertise.</p></div><div className="research-topics"><span>Metacognitive AI</span><span>Knowledge-Based AI</span><span>Human-in-the-loop systems</span><span>Natural language processing</span></div><SectionHeading number="01" label="PUBLICATIONS" title="Ideas, put to paper." /><div className="publication-list">{publications.map((paper, i) => <article id={`paper-${i}`} key={paper.title}><div className="publication-index"><span>0{i + 1}</span><span>{paper.date}</span></div><div><span className="eyebrow">{paper.venue}</span><h3>{paper.title}</h3><p>{paper.description}</p></div></article>)}</div><div className="research-projects"><SectionHeading number="02" label="RESEARCH IN PRACTICE" title={<>From self-models<br /><span className="serif-word">to the factory floor.</span></>} /><div className="research-cases"><Link to="/projects#sami"><span className="eyebrow">GEORGIA TECH / AUG 2024 — DEC 2025</span><h3>SAMI</h3><p>A social AI agent with a two-level metacognitive architecture. Knowledge graphs and TMK self-models help localize reasoning errors and guide adaptation.</p><span className="text-link">Explore the research <ArrowUpRight size={16} /></span></Link><Link to="/projects#knitdraft"><span className="eyebrow">MAEKNIT / MAR 2025 — PRESENT</span><h3>KnitDraft / TMK-Knit</h3><p>A human-in-the-loop research system applying structured manufacturing knowledge and LLMs to industrial flat-knitting machine programming.</p><span className="text-link">Explore the work <ArrowUpRight size={16} /></span></Link></div></div><div className="service-section"><SectionHeading number="03" label="PROFESSIONAL SERVICE" title="On the other side of review." /><p>Contributing as a reviewer for:</p><ul>{service.map(item => <li key={item}>{item}<span>REVIEWER</span></li>)}</ul></div></section>;
+  return (
+    <section className="page-width section inner-page">
+      <div className="page-intro">
+        <p className="eyebrow">RESEARCH / ASK BETTER QUESTIONS</p>
+        <h1>
+          Intelligence with
+          <br />
+          <span className="serif-word">a little introspection.</span>
+        </h1>
+        <p>
+          I explore how AI agents can understand their own reasoning, correct
+          their mistakes, and work alongside human expertise.
+        </p>
+      </div>
+      <div className="research-topics">
+        <span>Metacognitive AI</span>
+        <span>Knowledge-Based AI</span>
+        <span>Human-in-the-loop systems</span>
+        <span>Natural language processing</span>
+      </div>
+      <SectionHeading
+        number="01"
+        label="PUBLICATIONS"
+        title="Ideas, put to paper."
+      />
+      <div className="publication-list">
+        {publications.map((paper, i) => (
+          <article id={`paper-${i}`} key={paper.title}>
+            <div className="publication-index">
+              <span>0{i + 1}</span>
+              <span>{paper.date}</span>
+            </div>
+            <div>
+              <span className="eyebrow">{paper.venue}</span>
+              <h3>{paper.title}</h3>
+              <p>{paper.description}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+      <div className="research-projects">
+        <SectionHeading
+          number="02"
+          label="RESEARCH IN PRACTICE"
+          title={
+            <>
+              From self-models
+              <br />
+              <span className="serif-word">to the factory floor.</span>
+            </>
+          }
+        />
+        <div className="research-cases">
+          <Link to="/projects#sami">
+            <span className="eyebrow">GEORGIA TECH / AUG 2024 — DEC 2025</span>
+            <h3>SAMI</h3>
+            <p>
+              A social AI agent with a two-level metacognitive architecture.
+              Knowledge graphs and TMK self-models help localize reasoning
+              errors and guide adaptation.
+            </p>
+            <span className="text-link">
+              Explore the research <ArrowUpRight size={16} />
+            </span>
+          </Link>
+          <Link to="/projects#knitdraft">
+            <span className="eyebrow">MAEKNIT / MAR 2025 — PRESENT</span>
+            <h3>KnitDraft / TMK-Knit</h3>
+            <p>
+              A human-in-the-loop research system applying structured
+              manufacturing knowledge and LLMs to industrial flat-knitting
+              machine programming.
+            </p>
+            <span className="text-link">
+              Explore the work <ArrowUpRight size={16} />
+            </span>
+          </Link>
+        </div>
+      </div>
+      <div className="service-section">
+        <SectionHeading
+          number="03"
+          label="PROFESSIONAL SERVICE"
+          title="On the other side of review."
+        />
+        <p>Contributing as a reviewer for:</p>
+        <ul>
+          {service.map((item) => (
+            <li key={item}>
+              {item}
+              <span>REVIEWER</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
 }
