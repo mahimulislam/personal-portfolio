@@ -57,7 +57,7 @@ export default function Publications() {
         />
         <div className="research-cases">
           <Link to="/projects#sami">
-            <span className="eyebrow">GEORGIA TECH / AUG 2024 — DEC 2025</span>
+            <span className="eyebrow">GEORGIA TECH / AUG 2024 to DEC 2025</span>
             <h3>SAMI</h3>
             <p>
               A social AI agent with a two-level metacognitive architecture.
@@ -69,7 +69,7 @@ export default function Publications() {
             </span>
           </Link>
           <Link to="/projects#knitdraft">
-            <span className="eyebrow">MAEKNIT / MAR 2025 — PRESENT</span>
+            <span className="eyebrow">MAEKNIT / MAR 2025 to PRESENT</span>
             <h3>KnitDraft / TMK-Knit</h3>
             <p>
               A human-in-the-loop research system applying structured

@@ -7,7 +7,7 @@ export const projects = [
     title: "Connecting the factory floor.",
     name: "MAEKNIT platform",
     category: "Engineering",
-    period: "2025 — Present",
+    period: "2025 to Present",
     kind: "systems",
     summary:
       "One connected workflow, from a client's first idea to the manufacturing floor.",
@@ -27,7 +27,7 @@ export const projects = [
     title: "Expert knowledge. New possibilities.",
     name: "KnitDraft / TMK-Knit",
     category: "Research",
-    period: "2025 — Present",
+    period: "2025 to Present",
     kind: "knit",
     summary:
       "Exploring AI-assisted industrial knitting, with the expert always in the loop.",
@@ -46,7 +46,7 @@ export const projects = [
     title: "Teaching agents to think again.",
     name: "SAMI · Design Intelligence Lab",
     category: "Research",
-    period: "2024 — 2025",
+    period: "2024 to 2025",
     kind: "agent",
     summary:
       "Metacognitive AI that can locate reasoning errors and adapt its own behavior.",
@@ -66,7 +66,7 @@ export const projects = [
     title: "Care, carried through the system.",
     name: "Genome Medical",
     category: "Engineering",
-    period: "2022 — 2025",
+    period: "2022 to 2025",
     kind: "health",
     summary:
       "Secure clinical platforms and patient data migration with zero data loss.",
@@ -137,7 +137,7 @@ export const experience = [
   {
     company: "MAEKNIT, Inc.",
     role: "Full Stack Software Engineer & AI Researcher",
-    period: "Mar 2025 — Present",
+    period: "Mar 2025 to Present",
     location: "Jamaica, NY",
     intro: "From client idea to factory execution.",
     description:
@@ -153,7 +153,7 @@ export const experience = [
   {
     company: "Genome Medical Inc.",
     role: "Full Stack Engineer",
-    period: "Aug 2022 — Jan 2025",
+    period: "Aug 2022 to Jan 2025",
     location: "South San Francisco, CA",
     intro: "Reliable software for high-stakes care.",
     description:
@@ -169,7 +169,7 @@ export const experience = [
   {
     company: "Cardinal Selling Services",
     role: "Software Developer",
-    period: "Jul 2014 — Jan 2021",
+    period: "Jul 2014 to Jan 2021",
     location: "Huntingburg, IN",
     intro: "Building the foundations.",
     description:

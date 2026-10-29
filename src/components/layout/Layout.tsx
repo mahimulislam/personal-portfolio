@@ -16,7 +16,7 @@ const titles: Record<string, string> = {
 export default function Layout() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
-    document.title = `${titles[pathname] || "Page not found"} — Mahimul Islam`;
+    document.title = `${titles[pathname] || "Page not found"} | Mahimul Islam`;
     if (hash) {
       const frame = requestAnimationFrame(() =>
         document

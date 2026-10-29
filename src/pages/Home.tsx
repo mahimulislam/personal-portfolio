@@ -26,7 +26,7 @@ export default function Home() {
               in the loop<span className="accent-text">.</span>
             </h1>
             <p className="hero-intro">
-              I’m Mahimul. I build the systems behind the screen—and explore how
+              I’m Mahimul. I build the systems behind the screen and explore how
               AI can work better with the people in front of it.
             </p>
             <div className="hero-actions">

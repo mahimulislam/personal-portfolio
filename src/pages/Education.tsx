@@ -69,7 +69,7 @@ export default function Education() {
           }
         />
         <article className="education-row">
-          <span className="eyebrow">JAN 2024 — DEC 2025</span>
+          <span className="eyebrow">JAN 2024 to DEC 2025</span>
           <div>
             <h3>Georgia Institute of Technology</h3>
             <p>Master of Science in Computer Science</p>
@@ -78,7 +78,7 @@ export default function Education() {
           <span className="degree-mark">M.S.</span>
         </article>
         <article className="education-row">
-          <span className="eyebrow">NOV 2015 — FEB 2020</span>
+          <span className="eyebrow">NOV 2015 to FEB 2020</span>
           <div>
             <h3>Ahsanullah University of Science and Technology</h3>
             <p>Bachelor of Science in Computer Science and Engineering</p>

@@ -27,7 +27,7 @@ export default function SystemMap() {
   return (
     <div className="system-map">
       <div className="map-header">
-        <span>FIG. 01 — A CONNECTED PRACTICE</span>
+        <span>FIG. 01 | A CONNECTED PRACTICE</span>
         <span className="map-cross">+</span>
       </div>
       <div className={`map-drawing map-mode-${selected}`}>
