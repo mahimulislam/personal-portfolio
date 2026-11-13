@@ -6,11 +6,11 @@ export default function Education() {
   return (
     <section className="page-width section inner-page">
       <div className="page-intro">
-        <p className="eyebrow">ABOUT / ALWAYS A STUDENT</p>
+        <p className="eyebrow">ABOUT / BACKGROUND & EDUCATION</p>
         <h1>
-          Engineer. Researcher.
+          A little
           <br />
-          <span className="serif-word">Work in progress.</span>
+          <span className="serif-word">about me.</span>
         </h1>
       </div>
       <div className="about-grid">
@@ -32,16 +32,16 @@ export default function Education() {
             the people who rely on them.
           </p>
           <p>
-            My work connects full stack engineering and applied AI research. At
-            MAEKNIT, I lead engineering execution across a team of four,
-            building platforms for clients, factories, and internal operations
-            while developing human-in-the-loop manufacturing AI.
+            I work in full stack engineering and applied AI research. At
+            MAEKNIT, I lead a team of four engineers. We build platforms for
+            clients, factories, and internal operations. I also research
+            manufacturing AI that keeps experts involved in the decisions.
           </p>
           <p>
             At Georgia Tech’s Design Intelligence Lab, I contributed to SAMI and
-            co-designed a metacognitive architecture for AI agents. The thread
-            through both worlds is the same: thoughtful systems, grounded in
-            human context.
+            co-designed a metacognitive architecture that helps AI agents
+            examine their own reasoning. In both roles, I’m interested in
+            how people use these systems and where they need help.
           </p>
           <div className="skill-table">
             {skillGroups.map((group) => (
@@ -52,7 +52,7 @@ export default function Education() {
             ))}
           </div>
           <Link className="text-link" to="/experience">
-            My professional journey <ArrowUpRight size={16} />
+            See where I’ve worked <ArrowUpRight size={16} />
           </Link>
         </div>
       </div>
@@ -62,9 +62,9 @@ export default function Education() {
           label="EDUCATION"
           title={
             <>
-              A foundation for
+              What I studied,
               <br />
-              <span className="serif-word">the next question.</span>
+              <span className="serif-word">and where.</span>
             </>
           }
         />
@@ -87,7 +87,7 @@ export default function Education() {
           <span className="degree-mark">B.S.</span>
         </article>
         <Link className="text-link" to="/certifications">
-          More learning & certifications <ArrowUpRight size={16} />
+          View my certifications <ArrowUpRight size={16} />
         </Link>
       </div>
     </section>

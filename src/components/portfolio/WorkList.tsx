@@ -64,7 +64,7 @@ export default function WorkList({ featured = false }: { featured?: boolean }) {
               aria-expanded={expanded === project.id}
               aria-controls={`detail-${project.id}`}
             >
-              {expanded === project.id ? "Close field note" : "Read field note"}
+              {expanded === project.id ? "Hide project details" : "Read project details"}
               {expanded === project.id ? (
                 <Minus size={16} />
               ) : (
@@ -93,7 +93,7 @@ export default function WorkList({ featured = false }: { featured?: boolean }) {
       </div>
       {featured && (
         <Link className="text-link all-work" to="/projects">
-          Explore the full collection <ArrowDown size={16} />
+          View all projects <ArrowDown size={16} />
         </Link>
       )}
     </>

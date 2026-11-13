@@ -17,7 +17,7 @@ export default function Contact() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const subject = encodeURIComponent(
-      String(data.get("subject") || "Let’s make something matter"),
+      String(data.get("subject") || "Hello from your portfolio"),
     );
     const body = encodeURIComponent(
       `Hi Mahimul,\n\n${data.get("message")}\n\n${data.get("name")}\n${data.get("email")}`,
@@ -28,20 +28,20 @@ export default function Contact() {
   return (
     <section className="page-width section inner-page">
       <div className="page-intro">
-        <p className="eyebrow">CONTACT / START SOMETHING</p>
+        <p className="eyebrow">CONTACT / GET IN TOUCH</p>
         <h1>
-          Good things start
+          Have something
           <br />
-          <span className="serif-word">with a conversation.</span>
+          <span className="serif-word">in mind?</span>
         </h1>
         <p>
-          Have an engineering challenge, a research question, or an idea worth
-          exploring? I’d love to hear it.
+          If you’d like to talk about a project or research, send me an email.
+          I’d love to hear what you’re working on.
         </p>
       </div>
       <div className="contact-grid">
         <div>
-          <span className="eyebrow">THE DIRECT ROUTE</span>
+          <span className="eyebrow">EMAIL ME</span>
           <a className="contact-email" href="mailto:mahimulislam@gmail.com">
             mahimulislam
             <br />
@@ -80,7 +80,7 @@ export default function Contact() {
           </div>
         </div>
         <form onSubmit={compose} className="contact-form">
-          <span className="eyebrow">OR PUT YOUR THOUGHTS HERE</span>
+          <span className="eyebrow">WRITE YOUR EMAIL HERE</span>
           <div className="form-row">
             <label>
               Your name
@@ -105,10 +105,10 @@ export default function Contact() {
             </label>
           </div>
           <label>
-            What’s on your mind?
+            Subject
             <input
               name="subject"
-              placeholder="A project, a question, a possibility…"
+              placeholder="What would you like to discuss?"
               maxLength={200}
             />
           </label>
@@ -130,7 +130,7 @@ export default function Contact() {
           </p>
           {composed && (
             <p role="status" className="form-feedback">
-              Your email draft is ready in your email app. If it didn’t open,
+              Review and send the draft in your email app. If it didn’t open,
               email me directly at mahimulislam@gmail.com.
             </p>
           )}

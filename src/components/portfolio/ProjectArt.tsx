@@ -8,9 +8,9 @@ export default function ProjectArt({ kind }: { kind: string }) {
           <span>FACTORY</span>
           <i />
           <strong>
-            one connected
+            from client
             <br />
-            ecosystem.
+            to factory.
           </strong>
           <small>ODOO × AWS</small>
         </div>
@@ -23,7 +23,7 @@ export default function ProjectArt({ kind }: { kind: string }) {
               ))}
             </div>
           ))}
-          <span>KNOWLEDGE, WOVEN IN.</span>
+          <span>EXPERT KNOWLEDGE + AI</span>
         </div>
       ) : kind === "agent" ? (
         <div className="agent-diagram">
@@ -40,7 +40,7 @@ export default function ProjectArt({ kind }: { kind: string }) {
           <div>＋</div>
           <span>02 / PROVIDER</span>
           <i />
-          <small>CONTINUITY BY DESIGN</small>
+          <small>CONNECTED PATIENT CARE</small>
         </div>
       ) : (
         <div className="language-diagram">

@@ -6,15 +6,15 @@ export default function Publications() {
   return (
     <section className="page-width section inner-page">
       <div className="page-intro">
-        <p className="eyebrow">RESEARCH / ASK BETTER QUESTIONS</p>
+        <p className="eyebrow">RESEARCH / AI AGENTS & HUMAN EXPERTISE</p>
         <h1>
-          Intelligence with
+          How AI agents
           <br />
-          <span className="serif-word">a little introspection.</span>
+          <span className="serif-word">learn from mistakes.</span>
         </h1>
         <p>
           I explore how AI agents can understand their own reasoning, correct
-          their mistakes, and work alongside human expertise.
+          their mistakes, and work with people who know the subject.
         </p>
       </div>
       <div className="research-topics">
@@ -26,7 +26,7 @@ export default function Publications() {
       <SectionHeading
         number="01"
         label="PUBLICATIONS"
-        title="Ideas, put to paper."
+        title="Papers I’ve contributed to."
       />
       <div className="publication-list">
         {publications.map((paper, i) => (
@@ -49,9 +49,9 @@ export default function Publications() {
           label="RESEARCH IN PRACTICE"
           title={
             <>
-              From self-models
+              Putting the research
               <br />
-              <span className="serif-word">to the factory floor.</span>
+              <span className="serif-word">to work.</span>
             </>
           }
         />
@@ -60,24 +60,24 @@ export default function Publications() {
             <span className="eyebrow">GEORGIA TECH / AUG 2024 to DEC 2025</span>
             <h3>SAMI</h3>
             <p>
-              A social AI agent with a two-level metacognitive architecture.
-              Knowledge graphs and TMK self-models help localize reasoning
-              errors and guide adaptation.
+              A social AI agent that examines its reasoning at two levels.
+              Knowledge graphs and Task–Method–Knowledge (TMK) self-models
+              help it find errors and decide how to adapt.
             </p>
             <span className="text-link">
-              Explore the research <ArrowUpRight size={16} />
+              Read about SAMI <ArrowUpRight size={16} />
             </span>
           </Link>
           <Link to="/projects#knitdraft">
             <span className="eyebrow">MAEKNIT / MAR 2025 to PRESENT</span>
             <h3>KnitDraft / TMK-Knit</h3>
             <p>
-              A human-in-the-loop research system applying structured
-              manufacturing knowledge and LLMs to industrial flat-knitting
-              machine programming.
+              A research system that combines structured manufacturing
+              knowledge with LLMs to help program industrial flat-knitting
+              machines. Experts review the results.
             </p>
             <span className="text-link">
-              Explore the work <ArrowUpRight size={16} />
+              Read about KnitDraft <ArrowUpRight size={16} />
             </span>
           </Link>
         </div>
@@ -86,9 +86,9 @@ export default function Publications() {
         <SectionHeading
           number="03"
           label="PROFESSIONAL SERVICE"
-          title="On the other side of review."
+          title="Peer review."
         />
-        <p>Contributing as a reviewer for:</p>
+        <p>I review submissions for:</p>
         <ul>
           {service.map((item) => (
             <li key={item}>

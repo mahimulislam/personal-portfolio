@@ -3,21 +3,21 @@ import { useState } from "react";
 const modes = [
   {
     name: "Systems",
-    caption: "From the interface to the infrastructure.",
+    caption: "Software, from frontend to backend.",
     nodes: ["INTERFACE", "PLATFORM", "OPERATIONS"],
-    note: "Production software that connects people, data, and workflows.",
+    note: "I build the interfaces, services, and infrastructure that teams use every day.",
   },
   {
     name: "Intelligence",
-    caption: "Reason. Reflect. Adapt.",
+    caption: "AI that checks its own reasoning.",
     nodes: ["REASON", "SELF-MODEL", "ADAPT"],
-    note: "Metacognitive agents that can examine and correct their reasoning.",
+    note: "I study how agents can find mistakes in their reasoning and correct them.",
   },
   {
     name: "People",
     caption: "The expert stays in the loop.",
     nodes: ["CONTEXT", "EXPERT", "FEEDBACK"],
-    note: "AI-assisted workflows shaped by human knowledge and judgment.",
+    note: "I design AI-assisted workflows where people use their expertise to review the results.",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function SystemMap() {
   return (
     <div className="system-map">
       <div className="map-header">
-        <span>THE PRACTICE / THREE CONNECTED PARTS</span>
+        <span>HOW I APPROACH THE WORK</span>
         <span className="map-cross" aria-hidden="true">↗</span>
       </div>
       <div className={`map-drawing map-mode-${selected}`}>
@@ -90,7 +90,7 @@ export default function SystemMap() {
       <div
         className="map-controls"
         role="group"
-        aria-label="Explore my practice"
+        aria-label="Explore how I work"
       >
         {modes.map((item, i) => (
           <button

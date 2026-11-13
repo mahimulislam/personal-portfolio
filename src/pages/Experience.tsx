@@ -5,15 +5,15 @@ export default function Experience() {
   return (
     <section className="page-width section inner-page">
       <div className="page-intro">
-        <p className="eyebrow">EXPERIENCE / THE THROUGH LINE</p>
+        <p className="eyebrow">EXPERIENCE / MY ROLES</p>
         <h1>
-          Learning by building.
+          My work
           <br />
-          <span className="serif-word">Building with purpose.</span>
+          <span className="serif-word">so far.</span>
         </h1>
         <p>
-          6+ years working across the full software lifecycle, from architecture
-          and APIs to production support and the people who depend on it.
+          I’ve spent 6+ years designing software, building APIs, and supporting
+          applications in production. Here’s where I’ve done that work.
         </p>
       </div>
       <div className="timeline">
@@ -40,7 +40,7 @@ export default function Experience() {
         ))}
       </div>
       <Link className="text-link" to="/projects">
-        See the work behind the roles <ArrowUpRight size={17} />
+        View my projects <ArrowUpRight size={17} />
       </Link>
     </section>
   );

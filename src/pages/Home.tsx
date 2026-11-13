@@ -18,11 +18,9 @@ export default function Home() {
         <div className="hero-grid">
           <div className="hero-copy">
             <h1>
-              Software.
+              I build software
               <br />
-              Intelligence.
-              <br />
-              <span className="serif-word">A human touch.</span>
+              <span className="serif-word">and research AI.</span>
             </h1>
             <p className="hero-intro">
               I’m Mahimul Islam, a full stack engineer and AI researcher.
@@ -34,7 +32,7 @@ export default function Home() {
                 Explore my work <ArrowDown size={17} />
               </a>
               <Link className="text-link" to="/publications">
-                The research side <ArrowUpRight size={17} />
+                Read my research <ArrowUpRight size={17} />
               </Link>
             </div>
             <div className="hero-signoff">
@@ -51,9 +49,9 @@ export default function Home() {
       </section>
       <div className="practice-strip">
         <div className="page-width">
-          <span>EXPERIENCE, IN PRACTICE</span>
+          <span>MY WORK SO FAR</span>
           <div><strong>6+</strong><span>YEARS BUILDING SOFTWARE</span></div>
-          <div><strong>4</strong><span>INDUSTRIES, CONNECTED</span></div>
+          <div><strong>4</strong><span>INDUSTRIES WORKED IN</span></div>
           <div><strong>11,000+</strong><span>STUDENTS REACHED BY SAMI</span></div>
         </div>
       </div>
@@ -63,15 +61,15 @@ export default function Home() {
           label="SELECTED WORK"
           title={
             <>
-              Selected systems,
+              A few projects
               <br />
-              <span className="serif-word">built for people.</span>
+              <span className="serif-word">I’ve worked on.</span>
             </>
           }
         >
           <p>
             Manufacturing, healthcare, and applied AI.
-            <br />Explore the work and the decisions behind it.
+            <br />Read about what I built and why.
           </p>
         </SectionHeading>
         <WorkList featured />
@@ -80,21 +78,21 @@ export default function Home() {
         <div className="page-width">
           <SectionHeading
             number="02"
-            label="RESEARCH & CURIOSITY"
+            label="AI RESEARCH"
             title={
               <>
-                What if AI could
+                Helping AI agents
                 <br />
-                <span className="serif-word">think about its thinking?</span>
+                <span className="serif-word">catch their mistakes.</span>
               </>
             }
           />
           <div className="research-feature-grid">
             <div className="research-aside">
               <p>
-                That question connects my work on metacognitive agents at
-                Georgia Tech’s Design Intelligence Lab to human-in-the-loop
-                manufacturing AI at MAEKNIT.
+                At Georgia Tech’s Design Intelligence Lab, I worked on agents
+                that examine and correct their reasoning. At MAEKNIT, I’m
+                exploring how AI can help manufacturing experts with their work.
               </p>
               <div className="research-stat">
                 <strong>
@@ -134,12 +132,12 @@ export default function Home() {
       <section className="section page-width about-section">
         <SectionHeading
           number="03"
-          label="THE PERSON BEHIND THE WORK"
+          label="ABOUT ME"
           title={
             <>
-              Curious by nature.
+              A little about
               <br />
-              <span className="serif-word">Hands-on by choice.</span>
+              <span className="serif-word">how I work.</span>
             </>
           }
         />
@@ -159,19 +157,19 @@ export default function Home() {
           </figure>
           <div className="about-copy">
             <p className="large-copy">
-              I like the space where a complex problem becomes something people
-              can actually use.
+              I enjoy figuring out how a complicated system should work,
+              then building something people can use.
             </p>
             <p>
-              Over 6+ years, I’ve built production software across healthcare,
-              manufacturing, e-commerce, and B2B SaaS. Today, I lead engineering
-              execution at MAEKNIT and research how AI can support specialized
-              human expertise.
+              I’ve spent 6+ years building production software for healthcare,
+              manufacturing, e-commerce, and B2B SaaS. At MAEKNIT, I lead
+              engineering work and research how AI can help people apply
+              their specialized knowledge.
             </p>
             <p>
-              I hold an M.S. in Computer Science from Georgia Tech, specializing
-              in Interactive Intelligence. My work moves between system
-              architecture, thoughtful interfaces, and agents that can learn
+              I have an M.S. in Computer Science from Georgia Tech, with a
+              specialization in Interactive Intelligence. I work on system
+              architecture and interfaces, and study how AI agents can learn
               from their mistakes.
             </p>
             <div className="skill-table">
@@ -183,14 +181,14 @@ export default function Home() {
               ))}
             </div>
             <Link className="text-link" to="/experience">
-              Follow the journey <ArrowRight size={17} />
+              See my experience <ArrowRight size={17} />
             </Link>
           </div>
         </div>
       </section>
       <section className="contact-band">
         <div className="page-width">
-          <span className="eyebrow">04 / THE NEXT CONVERSATION</span>
+          <span className="eyebrow">04 / GET IN TOUCH</span>
           <Link to="/contact">
             Have a problem
             <br />
@@ -199,9 +197,9 @@ export default function Home() {
           </Link>
           <div className="contact-band-bottom">
             <span>
-              Engineering, AI research, or a good question.
+              Tell me about your project or research question.
               <br />
-              I’m always interested in a thoughtful conversation.
+              I’d be happy to hear what you’re working on.
             </span>
             <a href="mailto:mahimulislam@gmail.com">
               mahimulislam@gmail.com <ArrowUpRight size={16} />

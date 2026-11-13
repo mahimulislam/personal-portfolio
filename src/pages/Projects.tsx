@@ -3,15 +3,16 @@ export default function Projects() {
   return (
     <section className="page-width section inner-page">
       <div className="page-intro">
-        <p className="eyebrow">THE WORK / ENGINEERING & RESEARCH</p>
+        <p className="eyebrow">PROJECTS / ENGINEERING & RESEARCH</p>
         <h1>
-          Built to work.
+          Projects I’ve
           <br />
-          <span className="serif-word">Designed to matter.</span>
+          <span className="serif-word">worked on.</span>
         </h1>
         <p>
-          From connected factories to reflective AI agents. Explore the systems,
-          the questions behind them, and my role in bringing them to life.
+          I’ve worked on manufacturing platforms, healthcare software, and AI
+          agents that review their own reasoning. Here’s what each project
+          involved and what I contributed.
         </p>
       </div>
       <WorkList />

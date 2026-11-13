@@ -40,7 +40,7 @@ export default function Layout() {
         <div className="page-width">
           <div className="footer-top">
             <Link className="footer-name" to="/">
-              Mahimul Islam<span>Built with thought. Made for people.</span>
+              Mahimul Islam<span>Software engineer & AI researcher.</span>
             </Link>
             <div className="footer-social">
               <a
@@ -72,7 +72,7 @@ export default function Layout() {
           </nav>
           <div className="footer-bottom">
             <span>© {new Date().getFullYear()} MAHIMUL ISLAM</span>
-            <span>NEW YORK CITY · BUILT AT THE INTERSECTION</span>
+            <span>BASED IN NEW YORK CITY</span>
             <a href="#main">BACK TO TOP ↑</a>
           </div>
         </div>

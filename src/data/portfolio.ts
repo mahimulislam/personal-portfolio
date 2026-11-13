@@ -4,15 +4,15 @@ export const projects = [
   {
     id: "maeknit",
     number: "01",
-    title: "Connecting the factory floor.",
+    title: "Connecting clients and factories.",
     name: "MAEKNIT platform",
     category: "Engineering",
     period: "2025 to Present",
     kind: "systems",
     summary:
-      "One connected workflow, from a client's first idea to the manufacturing floor.",
+      "Software that takes a client’s idea through to factory production.",
     description:
-      "Leading engineering execution across a team of four, building the architecture that connects Admin, Client, and Factory portals with Odoo 18 Enterprise. The platform brings collections, quotations, documents, and production workflows into one ecosystem.",
+      "I lead a team of four engineers building Admin, Client, and Factory portals connected to Odoo 18 Enterprise. The platform handles collections, quotations, documents, and production workflows.",
     details: [
       "Multi-portal role-based access, CRM, and automated client onboarding with bidirectional Odoo synchronization.",
       "Factory quotation workflows connected to Sales, R&D, MRP, Inventory, and warehouse operations.",
@@ -24,15 +24,15 @@ export const projects = [
   {
     id: "knitdraft",
     number: "02",
-    title: "Expert knowledge. New possibilities.",
+    title: "Helping experts program knitting machines.",
     name: "KnitDraft / TMK-Knit",
     category: "Research",
     period: "2025 to Present",
     kind: "knit",
     summary:
-      "Exploring AI-assisted industrial knitting, with the expert always in the loop.",
+      "Research into AI-assisted industrial knitting, with experts reviewing the results.",
     description:
-      "Developing a human-in-the-loop research system at MAEKNIT that applies Task–Method–Knowledge modeling to industrial flat-knitting machine programming. The goal is to reduce repetitive programming effort while preserving expert validation.",
+      "At MAEKNIT, I’m developing a research system that uses Task–Method–Knowledge modeling to help program industrial flat-knitting machines. The aim is to reduce repetitive programming work while keeping experts responsible for validation.",
     details: [
       "A structured knowledge pipeline spanning machine programs, panel specifications, measurement data, and swatch results.",
       "Capturing program revisions, manufacturing timing, and machine-specific knowledge from development workflows.",
@@ -43,15 +43,15 @@ export const projects = [
   {
     id: "sami",
     number: "03",
-    title: "Teaching agents to think again.",
+    title: "Helping AI agents correct their mistakes.",
     name: "SAMI · Design Intelligence Lab",
     category: "Research",
     period: "2024 to 2025",
     kind: "agent",
     summary:
-      "Metacognitive AI that can locate reasoning errors and adapt its own behavior.",
+      "An AI agent that can find errors in its reasoning and adapt its behavior.",
     description:
-      "Contributed to Social Agent Mediated Interactions at Georgia Tech's Design Intelligence Lab. SAMI has been deployed in the OMSCS program for ten semesters and used by more than 11,000 students.",
+      "I contributed to Social Agent Mediated Interactions (SAMI) at Georgia Tech's Design Intelligence Lab. More than 11,000 students have used SAMI in the OMSCS program across ten semesters.",
     details: [
       "Co-designed a two-level metacognitive architecture integrating Knowledge-Based AI and LLMs.",
       "Built a Task–Method–Knowledge self-model to localize hallucination, omission, and misinterpretation errors.",
@@ -63,7 +63,7 @@ export const projects = [
   {
     id: "genome",
     number: "04",
-    title: "Care, carried through the system.",
+    title: "Building healthcare software.",
     name: "Genome Medical",
     category: "Engineering",
     period: "2022 to 2025",
@@ -71,7 +71,7 @@ export const projects = [
     summary:
       "Secure clinical platforms and patient data migration with zero data loss.",
     description:
-      "Built healthcare applications across Admin, Patient, and Provider portals in a HIPAA-regulated environment. Developed a React and Redux workflow with secure REST APIs to migrate patient data between Genome Medical and GeneMatters.",
+      "I built Admin, Patient, and Provider applications in a HIPAA-regulated environment. I also developed a React and Redux workflow with secure REST APIs to migrate patient data between Genome Medical and GeneMatters.",
     details: [
       "Cloud services on AWS ECS, Fargate, EC2, S3, and RDS with Docker and PostgreSQL.",
       "Resolved more than 50 security vulnerabilities using Aikido and Sentry.",
@@ -83,14 +83,14 @@ export const projects = [
   {
     id: "bangla",
     number: "05",
-    title: "Making more room for language.",
+    title: "Summarizing Bangla documents.",
     name: "Bangla text summarization",
     category: "Research",
     period: "2020",
     kind: "language",
     summary: "A hybrid extractive summarization system for Bangla documents.",
     description:
-      "First-author research applying NLP and machine learning techniques to Bangla text summarization, published in the International Journal of Computer Vision and Signal Processing, Volume 10, Number 1.",
+      "I was the first author on research using NLP and machine learning to summarize Bangla text. The work was published in the International Journal of Computer Vision and Signal Processing, Volume 10, Number 1.",
     details: [
       "Developed a hybrid extractive text summarization system.",
       "Applied natural language processing and machine learning to Bangla documents.",
@@ -106,7 +106,7 @@ export const publications = [
     venue: "IAAI-26 · Emerging Applications of AI · AAAI 2026",
     date: "Jan 2026",
     description:
-      "A two-level architecture using TMK-based self-modeling and integrated Knowledge-Based AI and LLM reasoning to localize and correct errors in deployed agents.",
+      "An architecture that helps deployed agents find and correct errors at two levels. It combines TMK-based self-modeling with Knowledge-Based AI and LLM reasoning.",
   },
   {
     title:
@@ -114,14 +114,14 @@ export const publications = [
     venue: "ToM4AI Workshop · AAAI 2026",
     date: "Jan 2026",
     description:
-      "A metacognitive Theory-of-Mind adaptation framework evaluated on real-world student feedback: 75% successful adaptation across 20 cases.",
+      "A metacognitive Theory-of-Mind framework for adapting agents based on real-world student feedback. It achieved 75% successful adaptation across 20 cases.",
   },
   {
     title: "Adaptable Social AI Agents",
     venue: "ToM4AI Workshop · AAAI 2025",
     date: "May 2025",
     description:
-      "Episodic self-explanation capabilities for SAMI, supporting adaptive and context-dependent reasoning in social AI agents.",
+      "Episodic self-explanation capabilities that help SAMI adapt its reasoning to the situation.",
   },
   {
     title: "Hybrid Text Summarizer for Bangla Documents",
@@ -139,9 +139,9 @@ export const experience = [
     role: "Full Stack Software Engineer & AI Researcher",
     period: "Mar 2025 to Present",
     location: "Jamaica, NY",
-    intro: "From client idea to factory execution.",
+    intro: "Building the software behind manufacturing.",
     description:
-      "Lead engineering execution across four engineers, owning architecture, implementation, deployment, and production support while mentoring the team and working directly with the CEO and CTO.",
+      "I lead a team of four engineers and take responsibility for architecture, implementation, deployment, and production support. I also mentor the team and work directly with the CEO and CTO.",
     points: [
       "Designed multi-portal RBAC architecture for Admin, Client, and Factory users with Next.js, React, and TypeScript.",
       "Integrated Odoo 18 Enterprise across CRM, Sales, R&D, MRP, Inventory, and warehouse operations using Python, OWL, and JSON-RPC.",
@@ -155,9 +155,9 @@ export const experience = [
     role: "Full Stack Engineer",
     period: "Aug 2022 to Jan 2025",
     location: "South San Francisco, CA",
-    intro: "Reliable software for high-stakes care.",
+    intro: "Building and supporting clinical applications.",
     description:
-      "Built and maintained Admin, Patient, and Provider applications using React, Vue, Flask, Node.js, and PostgreSQL in a HIPAA-regulated environment.",
+      "I built and maintained Admin, Patient, and Provider applications in a HIPAA-regulated environment, using React, Vue, Flask, Node.js, and PostgreSQL.",
     points: [
       "Enabled secure patient data migration between Genome Medical and GeneMatters with zero data loss.",
       "Architected AWS cloud services and automated build, test, and deployment pipelines.",
@@ -171,9 +171,9 @@ export const experience = [
     role: "Software Developer",
     period: "Jul 2014 to Jan 2021",
     location: "Huntingburg, IN",
-    intro: "Building the foundations.",
+    intro: "Developing web applications and internal tools.",
     description:
-      "Developed websites, internal tools, REST services, scraping pipelines, and automation with Python, Django, JavaScript, and relational databases.",
+      "I developed websites, internal tools, REST services, scraping pipelines, and automation using Python, Django, JavaScript, and relational databases.",
     points: [
       "Analyzed user requirements and designed relational schemas and entity relationship diagrams.",
       "Built Python data scraping pipelines and automated testing workflows.",

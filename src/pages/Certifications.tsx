@@ -133,11 +133,11 @@ export default function Certifications() {
   return (
     <section className="page-width section inner-page">
       <div className="page-intro">
-        <p className="eyebrow">LEARNING / KEEP FOLLOWING THE THREAD</p>
+        <p className="eyebrow">LEARNING / COURSES & CREDENTIALS</p>
         <h1>
-          Curiosity doesn’t
+          Courses and
           <br />
-          <span className="serif-word">clock out.</span>
+          <span className="serif-word">certifications.</span>
         </h1>
         <p>
           Selected certifications and credentials across AI, software

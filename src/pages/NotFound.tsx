@@ -4,17 +4,17 @@ export default function NotFound() {
   return (
     <section className="page-width section inner-page">
       <div className="page-intro">
-        <p className="eyebrow">404 / AN UNEXPECTED DETOUR</p>
+        <p className="eyebrow">404 / PAGE NOT FOUND</p>
         <h1>
-          A loose
+          This page
           <br />
-          <span className="serif-word">thread.</span>
+          <span className="serif-word">isn’t here.</span>
         </h1>
         <p>
-          This page doesn’t exist. Let’s get you back to something that does.
+          The address may be incorrect, or the page may have moved.
         </p>
         <Link to="/" className="primary-link">
-          <ArrowLeft size={17} /> Back to the work
+          <ArrowLeft size={17} /> Back to home
         </Link>
       </div>
     </section>
