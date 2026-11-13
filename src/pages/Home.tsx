@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <figure className="hero-portrait hero__media" data-visual>
               <div className="portrait-topline">
-                <span>THE PERSON BEHIND THE WORK</span>
+                <span>HI, I’M MAHIMUL.</span>
                 <ArrowUpRight size={20} />
               </div>
               <img

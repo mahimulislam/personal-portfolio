@@ -2,13 +2,13 @@
 
 Kind: service. A personal portfolio for people assessing Mahimul's engineering and AI research work. Primary action: view projects; secondary action: contact Mahimul.
 
-Taste deal: swap-pastels palette, Albert Sans, split portrait hero, word-highlight statement. Ice-blue grounds and teal create a distinct technical identity while charcoal gives the research work contrast. Preserve the generated palette tokens. The existing application remains React/Vite with its seven routes, existing data, accessible navigation, and mailto contact flow.
+Palette corrected following the owner’s feedback: warm white, charcoal, and vivid orange replace the rejected ice-blue/teal palette. Portraits retain their natural color. Albert Sans, the split portrait hero, and the word-highlight statement remain. The owner’s requested direction overrides the original Taste palette deal. The existing application remains React/Vite with its seven routes, existing data, accessible navigation, and mailto contact flow.
 
 Voice: first-person, specific, straightforward. Preserve official paper titles, credentials, dates, metrics, contact details, technical claims, and portrait captions. No invented availability or endorsements. All imagery is the owner's portrait; project graphics explain real workflows rather than imitate product screenshots.
 
 ## Visual contract
 
-- Ground #c3d7e5; surface #d0e0eb; ink #141414; accent #0f5257. Neutral project surfaces and charcoal research panels provide contrast.
+- Ground #fffdf9; surface #f4f0e8; ink #24211e; accent #c44216. Neutral project surfaces and charcoal research panels provide contrast.
 - Albert Sans for display and body, 400/500/600. IBM Plex Mono for compact metadata. No italic serif headings.
 - Content width 1280px, 64px desktop outer spacing, 24px mobile. Spacing scale 8/12/16/24/32/48/64/96/128.
 - Radius 12px on panels and 6px on controls. One primary filled button and one secondary outlined button. Visible focus rings on both light and dark surfaces.
