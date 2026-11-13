@@ -62,6 +62,14 @@ export default function Layout() {
               </a>
             </div>
           </div>
+          <nav className="footer-pages" aria-label="Explore the portfolio">
+            <Link to="/projects">Work</Link>
+            <Link to="/publications">Research</Link>
+            <Link to="/experience">Experience</Link>
+            <Link to="/education">About & education</Link>
+            <Link to="/certifications">Certifications</Link>
+            <Link to="/contact">Contact</Link>
+          </nav>
           <div className="footer-bottom">
             <span>© {new Date().getFullYear()} MAHIMUL ISLAM</span>
             <span>NEW YORK CITY · BUILT AT THE INTERSECTION</span>

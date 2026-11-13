@@ -27,8 +27,8 @@ export default function SystemMap() {
   return (
     <div className="system-map">
       <div className="map-header">
-        <span>FIG. 01 | A CONNECTED PRACTICE</span>
-        <span className="map-cross">+</span>
+        <span>THE PRACTICE / THREE CONNECTED PARTS</span>
+        <span className="map-cross" aria-hidden="true">↗</span>
       </div>
       <div className={`map-drawing map-mode-${selected}`}>
         <svg viewBox="0 0 500 400" fill="none" aria-hidden="true">
@@ -83,8 +83,8 @@ export default function SystemMap() {
         <span className="map-node node-middle">{mode.nodes[1]}</span>
         <span className="map-node node-bottom">{mode.nodes[2]}</span>
         <span className="map-coordinate">
-          40.7128° N<br />
-          73.0060° W
+          SOFTWARE<br />
+          WITH CONTEXT
         </span>
       </div>
       <div

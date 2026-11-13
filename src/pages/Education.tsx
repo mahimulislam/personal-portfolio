@@ -16,7 +16,7 @@ export default function Education() {
       <div className="about-grid">
         <figure className="portrait">
           <img
-            src="/images/MahimuL_Islam_Pro.png"
+            src="/images/mahimul-portrait.jpg"
             alt="Mahimul Islam"
             width="1083"
             height="1453"

@@ -11,23 +11,23 @@ export default function Home() {
       <section className="hero page-width">
         <div className="hero-topline">
           <span className="eyebrow">
-            <span className="status-dot" /> A PRACTICE IN SOFTWARE &
-            INTELLIGENCE
+            <span className="status-dot" /> SOFTWARE ENGINEERING & APPLIED AI
           </span>
-          <span className="hero-edition">PERSONAL PORTFOLIO / 2026</span>
+          <span className="hero-edition">NEW YORK CITY / PORTFOLIO</span>
         </div>
         <div className="hero-grid">
           <div className="hero-copy">
             <h1>
-              Engineering
+              Software.
               <br />
-              with a <span className="serif-word">human</span>
+              Intelligence.
               <br />
-              in the loop<span className="accent-text">.</span>
+              <span className="serif-word">A human touch.</span>
             </h1>
             <p className="hero-intro">
-              I’m Mahimul. I build the systems behind the screen and explore how
-              AI can work better with the people in front of it.
+              I’m Mahimul Islam, a full stack engineer and AI researcher.
+              I build production systems and explore how AI can support
+              the people who use them.
             </p>
             <div className="hero-actions">
               <a className="primary-link" href="#selected-work">
@@ -38,11 +38,11 @@ export default function Home() {
               </Link>
             </div>
             <div className="hero-signoff">
-              <span className="tiny-cross">✳</span>
+              <img src="/images/mahimul-avatar.jpg" alt="" width="44" height="44" />
               <span>
-                FULL STACK SOFTWARE ENGINEER & AI RESEARCHER
+                CURRENTLY BUILDING AT MAEKNIT
                 <br />
-                <span>NEW YORK CITY · M.S. COMPUTER SCIENCE, GEORGIA TECH</span>
+                <span>M.S. COMPUTER SCIENCE · GEORGIA TECH</span>
               </span>
             </div>
           </div>
@@ -51,12 +51,10 @@ export default function Home() {
       </section>
       <div className="practice-strip">
         <div className="page-width">
-          <span>FROM IDEA TO PRODUCTION</span>
-          <span>SOFTWARE ENGINEERING</span>
-          <i>✳</i>
-          <span>APPLIED AI RESEARCH</span>
-          <i>✳</i>
-          <span>HUMAN EXPERTISE</span>
+          <span>EXPERIENCE, IN PRACTICE</span>
+          <div><strong>6+</strong><span>YEARS BUILDING SOFTWARE</span></div>
+          <div><strong>4</strong><span>INDUSTRIES, CONNECTED</span></div>
+          <div><strong>11,000+</strong><span>STUDENTS REACHED BY SAMI</span></div>
         </div>
       </div>
       <section className="section page-width" id="selected-work">
@@ -65,15 +63,15 @@ export default function Home() {
           label="SELECTED WORK"
           title={
             <>
-              Different domains.
+              Selected systems,
               <br />
-              <span className="serif-word">One connected thread.</span>
+              <span className="serif-word">built for people.</span>
             </>
           }
         >
           <p>
-            Real systems. Real constraints.
-            <br />A few things I’ve helped bring to life.
+            Manufacturing, healthcare, and applied AI.
+            <br />Explore the work and the decisions behind it.
           </p>
         </SectionHeading>
         <WorkList featured />
@@ -148,7 +146,7 @@ export default function Home() {
         <div className="about-grid">
           <figure className="portrait">
             <img
-              src="/images/MahimuL_Islam_Pro.png"
+              src="/images/mahimul-portrait.jpg"
               alt="Mahimul Islam"
               loading="lazy"
               width="1083"
@@ -194,9 +192,9 @@ export default function Home() {
         <div className="page-width">
           <span className="eyebrow">04 / THE NEXT CONVERSATION</span>
           <Link to="/contact">
-            Let’s make
+            Have a problem
             <br />
-            something <span className="serif-word">matter.</span>
+            <span className="serif-word">worth solving?</span>
             <ArrowUpRight aria-hidden="true" />
           </Link>
           <div className="contact-band-bottom">

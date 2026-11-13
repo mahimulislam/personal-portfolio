@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 .env*
+
+# Local UI audit browser profiles and generated reports
+/.taste-skill/
