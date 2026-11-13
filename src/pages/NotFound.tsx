@@ -8,7 +8,7 @@ export default function NotFound() {
         <h1>
           This page
           <br />
-          <span className="serif-word">isn’t here.</span>
+          <span className="accent-text">isn’t here.</span>
         </h1>
         <p>
           The address may be incorrect, or the page may have moved.

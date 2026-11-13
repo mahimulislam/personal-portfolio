@@ -1,98 +1,122 @@
-import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import SectionHeading from "@/components/portfolio/SectionHeading";
-import SystemMap from "@/components/portfolio/SystemMap";
 import WorkList from "@/components/portfolio/WorkList";
+import SystemMap from "@/components/portfolio/SystemMap";
+import SectionHeading from "@/components/portfolio/SectionHeading";
 import { publications, skillGroups } from "@/data/portfolio";
 
 export default function Home() {
   return (
     <>
-      <section className="hero page-width">
-        <div className="hero-topline">
-          <span className="eyebrow">
-            <span className="status-dot" /> SOFTWARE ENGINEERING & APPLIED AI
-          </span>
-          <span className="hero-edition">NEW YORK CITY / PORTFOLIO</span>
-        </div>
-        <div className="hero-grid">
-          <div className="hero-copy">
-            <h1>
-              I build software
-              <br />
-              <span className="serif-word">and research AI.</span>
-            </h1>
-            <p className="hero-intro">
-              I’m Mahimul Islam, a full stack engineer and AI researcher.
-              I build production systems and explore how AI can support
-              the people who use them.
-            </p>
-            <div className="hero-actions">
-              <a className="primary-link" href="#selected-work">
-                Explore my work <ArrowDown size={17} />
-              </a>
-              <Link className="text-link" to="/publications">
-                Read my research <ArrowUpRight size={17} />
-              </Link>
-            </div>
-            <div className="hero-signoff">
-              <img src="/images/mahimul-avatar.jpg" alt="" width="44" height="44" />
-              <span>
-                CURRENTLY BUILDING AT MAEKNIT
+      <section className="hero" data-enter aria-labelledby="hero-title">
+        <div className="wrap page-width">
+          <div className="hero-grid">
+            <div className="hero-copy hero__text">
+              <div className="hero-kicker">
+                <span className="status-dot" /> MAHIMUL ISLAM{" "}
+                <span className="kicker-divider" /> NEW YORK CITY
+              </div>
+              <h1 id="hero-title">
+                Software
                 <br />
-                <span>M.S. COMPUTER SCIENCE · GEORGIA TECH</span>
-              </span>
+                engineer.<span className="hero-role">And AI researcher.</span>
+              </h1>
+              <p className="hero-intro hero__lead">
+                I build the software behind everyday work, and study how AI can
+                help the people doing it.
+              </p>
+              <div className="hero-actions">
+                <Link className="primary-link btn" to="/projects">
+                  View my work <ArrowUpRight size={20} />
+                </Link>
+                <Link className="secondary-link btn" to="/publications">
+                  Read my research <ArrowRight size={18} />
+                </Link>
+              </div>
+              <div className="hero-credentials">
+                <div>
+                  <span className="meta-label">CURRENTLY</span>
+                  <strong>Engineering at MAEKNIT</strong>
+                </div>
+                <div>
+                  <span className="meta-label">EDUCATION</span>
+                  <strong>M.S. Computer Science, Georgia Tech</strong>
+                </div>
+              </div>
             </div>
+            <figure className="hero-portrait hero__media" data-visual>
+              <div className="portrait-topline">
+                <span>THE PERSON BEHIND THE WORK</span>
+                <ArrowUpRight size={20} />
+              </div>
+              <img
+                src="/images/mahimul-portrait.jpg"
+                srcSet="/images/mahimul-portrait-640.jpg 640w, /images/mahimul-portrait.jpg 820w"
+                sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 900px) 42vw, 500px"
+                alt="Mahimul Islam"
+                width="820"
+                height="1100"
+              />
+              <figcaption>
+                <span>Mahimul Islam</span>
+                <span>
+                  <MapPin size={13} /> New York, NY
+                </span>
+              </figcaption>
+            </figure>
           </div>
-          <SystemMap />
+          <div className="hero-bottom">
+            <span>6+ YEARS IN SOFTWARE ENGINEERING</span>
+            <a href="#selected-work">
+              SCROLL TO EXPLORE <ArrowDown size={15} />
+            </a>
+          </div>
         </div>
       </section>
-      <div className="practice-strip">
-        <div className="page-width">
-          <span>MY WORK SO FAR</span>
-          <div><strong>6+</strong><span>YEARS BUILDING SOFTWARE</span></div>
-          <div><strong>4</strong><span>INDUSTRIES WORKED IN</span></div>
-          <div><strong>11,000+</strong><span>STUDENTS REACHED BY SAMI</span></div>
-        </div>
-      </div>
-      <section className="section page-width" id="selected-work">
-        <SectionHeading
-          number="01"
-          label="SELECTED WORK"
-          title={
-            <>
-              A few projects
-              <br />
-              <span className="serif-word">I’ve worked on.</span>
-            </>
-          }
-        >
-          <p>
-            Manufacturing, healthcare, and applied AI.
-            <br />Read about what I built and why.
-          </p>
-        </SectionHeading>
-        <WorkList featured />
-      </section>
-      <section className="research-feature" id="research">
-        <div className="page-width">
+
+      <section className="section work-section" id="selected-work">
+        <div className="wrap page-width">
           <SectionHeading
-            number="02"
-            label="AI RESEARCH"
+            number="01"
+            label="SELECTED WORK"
             title={
               <>
-                Helping AI agents
+                Ideas into
                 <br />
-                <span className="serif-word">catch their mistakes.</span>
+                <span className="accent-text">working systems.</span>
               </>
             }
-          />
+          >
+            <p>
+              Manufacturing platforms, healthcare software,
+              <br />
+              and AI agents that learn from feedback.
+            </p>
+          </SectionHeading>
+          <WorkList featured />
+        </div>
+      </section>
+
+      <section
+        className="research-feature section"
+        id="research"
+        data-moment="word-highlight"
+      >
+        <div className="wrap page-width">
+          <div className="section-topline">
+            <span className="eyebrow">02 / RESEARCH</span>
+            <span>GEORGIA TECH + MAEKNIT</span>
+          </div>
+          <h2 className="research-statement mo-wh__text">
+            AI should be able to examine its reasoning, learn from mistakes, and
+            work with <strong>human expertise.</strong>
+          </h2>
           <div className="research-feature-grid">
             <div className="research-aside">
               <p>
-                At Georgia Tech’s Design Intelligence Lab, I worked on agents
-                that examine and correct their reasoning. At MAEKNIT, I’m
-                exploring how AI can help manufacturing experts with their work.
+                At Georgia Tech’s Design Intelligence Lab, I helped build
+                metacognitive agents. At MAEKNIT, I research how AI can support
+                manufacturing experts.
               </p>
               <div className="research-stat">
                 <strong>
@@ -105,105 +129,97 @@ export default function Home() {
                 </span>
               </div>
               <Link className="text-link" to="/publications">
-                Research, publications & service <ArrowUpRight size={16} />
+                View all publications <ArrowUpRight size={18} />
               </Link>
             </div>
             <div className="paper-list">
-              {publications.slice(0, 3).map((paper, i) => (
+              {publications.slice(0, 3).map((paper, index) => (
                 <Link
-                  to={`/publications#paper-${i}`}
+                  to={`/publications#paper-${index}`}
                   key={paper.title}
                   className="paper-preview"
                 >
-                  <span className="eyebrow">
-                    {paper.date} / {i === 0 ? "IAAI" : "ToM4AI"}
-                  </span>
-                  <h3>{paper.title}</h3>
-                  <span className="paper-venue">
-                    {paper.venue}
-                    <ArrowUpRight size={19} />
-                  </span>
+                  <span className="paper-number">0{index + 1}</span>
+                  <div>
+                    <span className="eyebrow">
+                      {paper.date} / {index === 0 ? "IAAI" : "ToM4AI"}
+                    </span>
+                    <h3>{paper.title}</h3>
+                    <span className="paper-venue">{paper.venue}</span>
+                  </div>
+                  <ArrowUpRight size={22} />
                 </Link>
               ))}
             </div>
           </div>
         </div>
       </section>
-      <section className="section page-width about-section">
-        <SectionHeading
-          number="03"
-          label="ABOUT ME"
-          title={
-            <>
-              A little about
+
+      <section className="section practice-section">
+        <div className="wrap page-width">
+          <SectionHeading
+            number="03"
+            label="HOW I WORK"
+            title={
+              <>
+                Across the stack.
+                <br />
+                <span className="accent-text">Close to the problem.</span>
+              </>
+            }
+          >
+            <p>
+              I work from architecture to interface,
               <br />
-              <span className="serif-word">how I work.</span>
-            </>
-          }
-        />
-        <div className="about-grid">
-          <figure className="portrait">
-            <img
-              src="/images/mahimul-portrait.jpg"
-              alt="Mahimul Islam"
-              loading="lazy"
-              width="1083"
-              height="1453"
-            />
-            <figcaption>MAHIMUL ISLAM / NEW YORK CITY</figcaption>
-            <span className="portrait-mark" aria-hidden="true">
-              mi.
-            </span>
-          </figure>
-          <div className="about-copy">
-            <p className="large-copy">
-              I enjoy figuring out how a complicated system should work,
-              then building something people can use.
+              with the people using the system in mind.
             </p>
-            <p>
-              I’ve spent 6+ years building production software for healthcare,
-              manufacturing, e-commerce, and B2B SaaS. At MAEKNIT, I lead
-              engineering work and research how AI can help people apply
-              their specialized knowledge.
-            </p>
-            <p>
-              I have an M.S. in Computer Science from Georgia Tech, with a
-              specialization in Interactive Intelligence. I work on system
-              architecture and interfaces, and study how AI agents can learn
-              from their mistakes.
-            </p>
-            <div className="skill-table">
-              {skillGroups.map((group) => (
+          </SectionHeading>
+          <div className="practice-grid">
+            <SystemMap />
+            <div className="practice-index">
+              {skillGroups.map((group, index) => (
                 <div key={group.label}>
-                  <span>{group.label}</span>
-                  <p>{group.skills}</p>
+                  <span className="meta-label">0{index + 1}</span>
+                  <div>
+                    <h3>{group.label}</h3>
+                    <p>{group.skills}</p>
+                  </div>
+                  <ArrowUpRight size={19} />
                 </div>
               ))}
+              <Link className="text-link" to="/experience">
+                See my experience <ArrowRight size={18} />
+              </Link>
             </div>
-            <Link className="text-link" to="/experience">
-              See my experience <ArrowRight size={17} />
-            </Link>
           </div>
         </div>
       </section>
-      <section className="contact-band">
-        <div className="page-width">
-          <span className="eyebrow">04 / GET IN TOUCH</span>
-          <Link to="/contact">
-            Have a problem
-            <br />
-            <span className="serif-word">worth solving?</span>
-            <ArrowUpRight aria-hidden="true" />
-          </Link>
-          <div className="contact-band-bottom">
-            <span>
-              Tell me about your project or research question.
+
+      <section className="about-home section">
+        <div className="wrap page-width about-home-grid">
+          <div>
+            <span className="eyebrow">04 / A LITTLE BACKGROUND</span>
+            <h2>
+              Engineering,
               <br />
-              I’d be happy to hear what you’re working on.
-            </span>
-            <a href="mailto:mahimulislam@gmail.com">
-              mahimulislam@gmail.com <ArrowUpRight size={16} />
-            </a>
+              with a researcher’s
+              <br />
+              <span className="accent-text">curiosity.</span>
+            </h2>
+          </div>
+          <div className="about-home-copy">
+            <p className="large-copy">
+              I’m Mahimul. I enjoy taking a complicated problem apart and
+              building something people can use.
+            </p>
+            <p>
+              I’ve spent 6+ years working in healthcare, manufacturing,
+              e-commerce, and B2B SaaS. I have an M.S. in Computer Science from
+              Georgia Tech, specializing in Interactive Intelligence.
+            </p>
+            <Link className="primary-link btn" to="/education">
+              More about me <ArrowUpRight size={20} />
+            </Link>
           </div>
         </div>
       </section>

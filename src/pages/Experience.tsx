@@ -9,7 +9,7 @@ export default function Experience() {
         <h1>
           My work
           <br />
-          <span className="serif-word">so far.</span>
+          <span className="accent-text">so far.</span>
         </h1>
         <p>
           I’ve spent 6+ years designing software, building APIs, and supporting

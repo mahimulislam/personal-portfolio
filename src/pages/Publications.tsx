@@ -10,7 +10,7 @@ export default function Publications() {
         <h1>
           How AI agents
           <br />
-          <span className="serif-word">learn from mistakes.</span>
+          <span className="accent-text">learn from mistakes.</span>
         </h1>
         <p>
           I explore how AI agents can understand their own reasoning, correct
@@ -51,7 +51,7 @@ export default function Publications() {
             <>
               Putting the research
               <br />
-              <span className="serif-word">to work.</span>
+              <span className="accent-text">to work.</span>
             </>
           }
         />

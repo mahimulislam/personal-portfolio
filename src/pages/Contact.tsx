@@ -32,7 +32,7 @@ export default function Contact() {
         <h1>
           Have something
           <br />
-          <span className="serif-word">in mind?</span>
+          <span className="accent-text">in mind?</span>
         </h1>
         <p>
           If you’d like to talk about a project or research, send me an email.

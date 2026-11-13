@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-type="service" data-radius="soft" data-motion>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +8,22 @@
       name="description"
       content="I’m Mahimul Islam, a full stack engineer and AI researcher. Read about my work in manufacturing, healthcare, and AI agents that check their own reasoning."
     />
-    <meta name="theme-color" content="#f5f3ec" />
+    <meta name="theme-color" content="#c3d7e5" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="author" content="Mahimul Islam" />
+    <meta name="page-type" content="service" />
+    <meta name="site-kind" content="other" />
+    <link rel="stylesheet" href="/assets/taste/motion/motion.css" />
+    <script>
+      document.documentElement.classList.add("m-enter");
+      setTimeout(
+        () => document.documentElement.classList.add("m-enter-done"),
+        700,
+      );
+    </script>
 
     <meta
       property="og:title"
@@ -24,11 +34,12 @@
       content="I’m Mahimul Islam, a full stack engineer and AI researcher. Read about my work in manufacturing, healthcare, and AI agents that check their own reasoning."
     />
     <meta property="og:type" content="website" />
-    <script type="module" crossorigin src="/assets/index-CHn-ckK6.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D8naKx2F.css">
+    <script type="module" crossorigin src="/assets/index-DN5rz5CL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DFOpxmwc.css">
   </head>
 
   <body>
     <div id="root"></div>
+    <script type="module" src="/assets/taste/portfolio-motion.js"></script>
   </body>
 </html>

@@ -137,7 +137,7 @@ export default function Certifications() {
         <h1>
           Courses and
           <br />
-          <span className="serif-word">certifications.</span>
+          <span className="accent-text">certifications.</span>
         </h1>
         <p>
           Selected certifications and credentials across AI, software

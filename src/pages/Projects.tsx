@@ -7,7 +7,7 @@ export default function Projects() {
         <h1>
           Projects I’ve
           <br />
-          <span className="serif-word">worked on.</span>
+          <span className="accent-text">worked on.</span>
         </h1>
         <p>
           I’ve worked on manufacturing platforms, healthcare software, and AI

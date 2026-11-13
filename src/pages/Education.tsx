@@ -10,13 +10,15 @@ export default function Education() {
         <h1>
           A little
           <br />
-          <span className="serif-word">about me.</span>
+          <span className="accent-text">about me.</span>
         </h1>
       </div>
       <div className="about-grid">
         <figure className="portrait">
           <img
             src="/images/mahimul-portrait.jpg"
+            srcSet="/images/mahimul-portrait-640.jpg 640w, /images/mahimul-portrait.jpg 820w"
+            sizes="(max-width: 600px) calc(100vw - 40px), (max-width: 900px) 42vw, 500px"
             alt="Mahimul Islam"
             width="1083"
             height="1453"
@@ -40,8 +42,8 @@ export default function Education() {
           <p>
             At Georgia Tech’s Design Intelligence Lab, I contributed to SAMI and
             co-designed a metacognitive architecture that helps AI agents
-            examine their own reasoning. In both roles, I’m interested in
-            how people use these systems and where they need help.
+            examine their own reasoning. In both roles, I’m interested in how
+            people use these systems and where they need help.
           </p>
           <div className="skill-table">
             {skillGroups.map((group) => (
@@ -64,7 +66,7 @@ export default function Education() {
             <>
               What I studied,
               <br />
-              <span className="serif-word">and where.</span>
+              <span className="accent-text">and where.</span>
             </>
           }
         />
